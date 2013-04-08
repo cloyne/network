@@ -15,7 +15,7 @@ IP Space:
 ## router
 
 RouterBoard 450G @ 192.168.0.1 / buccaneer
-see router.config
+see router/router.config
 
 ## switches
 
