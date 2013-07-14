@@ -1,0 +1,7 @@
+/system logging action
+set 0 memory-lines=100 memory-stop-on-full=no name=memory target=memory
+set 1 disk-file-count=2 disk-file-name=log disk-lines-per-file=100 \
+    disk-stop-on-full=no name=disk target=disk
+set 2 name=echo remember=yes target=echo
+set 3 bsd-syslog=no name=remote remote-port=514 src-address=0.0.0.0 \
+    syslog-facility=daemon syslog-severity=auto target=remote

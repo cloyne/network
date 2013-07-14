@@ -13,9 +13,6 @@
     Second. DNS: 208.201.224.33
     Usable address range:  50.0.115.226 - 50.0.115.238 (13 addresses)
 
-## router
-
-RouterBoard 450G @ 192.168.0.1 / buccaneer. see router/router.config
 
 ## switches
 
@@ -39,6 +36,9 @@ RouterBoard 450G @ 192.168.0.1 / buccaneer. see router/router.config
     192.168.0.47 W1 wap
     192.168.0.48 W2 wap
     192.168.0.49 W3 wap
+    192.168.0.50 Study wap
+    192.168.0.51 Dining wap
+    192.168.0.52
 
 ## servers
 

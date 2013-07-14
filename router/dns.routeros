@@ -1,0 +1,10 @@
+/ip dns static
+add address=192.168.0.1 disabled=no name=router ttl=1d
+add address=192.168.0.15 disabled=no name=sketchy ttl=1d
+add address=192.168.0.15 disabled=no name=sketchy.cloyne ttl=1d
+add address=192.168.0.1 disabled=no name=router.cloyne ttl=1d
+/ip dns
+set allow-remote-requests=yes cache-max-ttl=1w cache-size=2048KiB \
+    max-udp-packet-size=4096 servers=208.201.224.11,208.201.224.33
+/ip dns static
+add address=192.168.0.1 disabled=no name=router ttl=1d

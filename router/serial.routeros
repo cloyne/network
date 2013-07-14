@@ -1,0 +1,3 @@
+/port
+set 0 baud-rate=auto data-bits=8 flow-control=none name=serial1 parity=none \
+    stop-bits=1

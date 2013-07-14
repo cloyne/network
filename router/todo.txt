@@ -1,0 +1,6 @@
+finish import.py
+finish modularizing router config
+add keys to gitignore
+push keys into private repo
+make command to merge private repo with public
+
