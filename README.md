@@ -13,41 +13,27 @@
     Second. DNS: 208.201.224.33
     Usable address range:  50.0.115.226 - 50.0.115.238 (13 addresses)
 
+## network mapping in progress
 
-## switches
+see `network` directory and `network.csv`
 
-    192.168.0.20 main switch
-    192.168.0.21 C1 switch
-    192.168.0.22 C2 switch
-    192.168.0.23 C3 switch
-    192.168.0.25 E2 switch
-    192.168.0.26 E3 switch
-    192.168.0.27 W1 switch
-    192.168.0.28 W2 switch
-    192.168.0.29 W3 switch
+## Mikrotik router
+
+see `router` directory
 
 ## waps
 
-    192.168.0.41 C1 wap
-    192.168.0.42 C2 wap
-    192.168.0.43 C3 wap
-    192.168.0.45 E2 wap
-    192.168.0.46 E3 wap
-    192.168.0.47 W1 wap
-    192.168.0.48 W2 wap
-    192.168.0.49 W3 wap
-    192.168.0.50 Study wap
-    192.168.0.51 Dining wap
-    192.168.0.52
+see `waps` directory
+
+## switches
 
 ## servers
 
 ### swashbuckler @ 192.168.0.10
 
 Debian.
-- puppet master : http://docs.puppetlabs.com/guides/setting_up.html
 - 'nm' user 
-- dns : https://github.com/lermit/puppet-bind
+- dns
 - ntp
 - mon
 
@@ -57,18 +43,12 @@ CentOS.
 - 'nm' user 
 - ftp
 - samba
-- nfs
-
-### unnamed
-
-Debian.
-- 'nm' user 
-- nfs mount
-- deluge
-
+- TODO: nfs
+- rtorrent
+- rutorrent
 
 ### kiosks
 
 Ubuntu.
 - 'clone' user
-- nfs mount
+- TODO: nfs mount

@@ -1,0 +1,76 @@
+
+!
+version 12.4
+no service pad
+service timestamps debug datetime msec
+service timestamps log datetime msec
+service password-encryption
+!
+hostname {{hostname}}
+!
+enable secret 5 $1$ZIDf$ro353xyEcRYow0XBZ8hvy/
+!
+no aaa new-model
+!
+!
+dot11 syslog
+!
+dot11 ssid Cloyne
+   authentication open 
+   authentication key-management wpa version 2
+   guest-mode
+   wpa-psk ascii 7 096F4206000B1252021F44393E2723
+!
+dot11 network-map
+!
+!
+username admin privilege 15 password 7 045009265D0D1A172712
+!
+!
+bridge irb
+!
+!
+interface Dot11Radio0
+ no ip address
+ no ip route-cache
+ !
+ encryption mode ciphers aes-ccm 
+ !
+ ssid Cloyne
+ !
+ antenna gain 0
+ station-role root
+ no dot11 extension aironet
+ bridge-group 1
+ bridge-group 1 subscriber-loop-control
+ bridge-group 1 block-unknown-source
+ no bridge-group 1 source-learning
+ no bridge-group 1 unicast-flooding
+ bridge-group 1 spanning-disabled
+!
+interface GigabitEthernet0
+ no ip address
+ no ip route-cache
+ duplex auto
+ speed auto
+ no keepalive
+ bridge-group 1
+ no bridge-group 1 source-learning
+ bridge-group 1 spanning-disabled
+!
+interface BVI1
+ ip address {{ip_address}} 255.255.0.0
+ no ip route-cache
+!
+ip http server
+no ip http secure-server
+ip http help-path http://www.cisco.com/warp/public/779/smbiz/prodconfig/help/eag
+bridge 1 route ip
+!
+!
+!
+line con 0
+line vty 0 4
+ login local
+!
+end
