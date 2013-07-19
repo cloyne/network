@@ -1,4 +1,8 @@
+#!/bin/bash
+
 TMP=$(mktemp)
-#rmdir $TMP
+echo $TMP
+rm $TMP
 git clone https://github.com/ahdinosaur/cloyne-network-private.git $TMP
-cp -R cloyne-network-private/* .
+cp -R $TMP/* .
+rm -rf $TMP
