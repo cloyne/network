@@ -1,5 +1,8 @@
 ip_address,mac_address,name,description
-192.168.0.20,,int-switch,main internal switch in network closet
+192.168.0.1,,router,main router
+192.168.0.10,,,
+192.168.0.15,,sketchy,file sharing server
+192.168.0.20,,internal-switch,main internal switch in network closet
 192.168.0.21,,C1-switch,
 192.168.0.22,,C2-switch,
 192.168.0.23,,C3-switch,
