@@ -25,3 +25,4 @@ ip_address,mac_address,name,description
 192.168.0.53,FC:99:47:44:25:CB,W2-wap2,
 192.168.0.54,FC:99:47:44:43:19,C2-wap2,
 192.168.0.55,FC:99:47:2D:08:A4,C2-wap3,
+192.168.0.56,A0:F3:C1:FF:14:70,study-wap2
