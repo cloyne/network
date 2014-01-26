@@ -28,3 +28,4 @@ ip_address,mac_address,name,description
 192.168.0.56,A0:F3:C1:FF:14:70,study-wap2
 192.168.0.57,74:EA:3A:A2:CF:CE,w2-wap
 192.168.0.58,A0:F3:C1:FF:2A:94,c3-wap
+192.168.0.59,90:F6:52:EA:05:EC,misc-wap1
