@@ -30,7 +30,7 @@ It is a [Mikrotik RouterBoard 450G](http://routerboard.com/RB450G). See `router`
 ### server1 ###
 
     External IP: 50.0.115.227
-    Hostname: server1.cloyne.net
+    Hostname:    server1.cloyne.net
 
 Running Debian Linux distribution as a host for Docker images. Services:
  * Secondary DNS server
@@ -38,7 +38,7 @@ Running Debian Linux distribution as a host for Docker images. Services:
 ### server2 ###
 
     External IP: 50.0.115.228
-    Hostname: server2.cloyne.net
+    Hostname:    server2.cloyne.net
 
 Running Debian Linux distribution as a host for Docker images. Services:
  * Primary DNS server
