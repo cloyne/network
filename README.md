@@ -1,8 +1,8 @@
-# cloyne network
+# Cloyne network
 
-** work in progress **
+## Fiber Internet
 
-## fiber internet
+Through [Sonic.net](http://sonic.net/), fiber itself is operated by AT&T.
 
     50.0.115.224/28
     Network:     50.0.115.224 (838890464)
@@ -13,13 +13,27 @@
     Second. DNS: 208.201.224.33
     Usable address range:  50.0.115.226 - 50.0.115.238 (13 addresses)
 
+Sonic.net network operations phone number is +1-877-706-662. Equipment directly connected to the fiber has to have configured fixed 100 Mbit/s full-duplex configuration and autonegotiation must be disabled.
+
+## Main router
+
+    External IP: 50.0.115.226
+    Internal IP: 192.168.0.1
+    Hostname:    router.cloyne.net
+
+It is a [Mikrotik RouterBoard 450G](http://routerboard.com/RB450G). See `router` directory for more information.
+
+## Servers
+
+
+
+
+# Possibly old information
+
 ## network mapping in progress
 
 see `network` directory and `network.csv`
 
-## Mikrotik router
-
-see `router` directory
 
 ## waps
 
