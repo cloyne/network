@@ -46,9 +46,9 @@ Running Debian Linux distribution as a host for Docker images. Services:
  * MySQL
  * PostgreSQL
  * Nginx reverse proxy
- * phpMyAdmin
- * phpPgAdmin
- * Cloyne.org blog (Wordpress)
+ * [phpMyAdmin](http://cloyne.net/phpmyadmin/)
+ * [phpPgAdmin](http://cloyne.net/phppgadmin/)
+ * [Cloyne.org](http://cloyne.org) blog (Wordpress)
 
 # Possibly old information
 
