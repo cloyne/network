@@ -50,6 +50,13 @@ Running Debian Linux distribution as a host for Docker images. Services:
  * [phpPgAdmin](http://cloyne.net/phppgadmin/)
  * [Cloyne.org](http://cloyne.org) blog (Wordpress)
 
+## Printers
+
+### printer1 ###
+
+    Internal IP: 192.168.0.100
+    Hostname:    printer1.cloyne.net
+
 # Possibly old information
 
 ## network mapping in progress
