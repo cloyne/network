@@ -57,6 +57,27 @@ Running Debian Linux distribution as a host for Docker images. Services:
     Internal IP: 192.168.0.100
     Hostname:    printer1.cloyne.net
 
+## APs
+
+ * 192.168.0.41 - Mailroom, C1, 1c:df:f:94:95:5a, cisco
+ * 192.168.0.42 - C2K, C2, 68:7f:74:c:f7:7f, dd-wrt
+ * 192.168.0.43 - Famiy Room, 68:7f:74:c:f7:c4, dd-wrt
+ * 192.168.0.45 - E2J, E2, 1c:df:f:94:93:47, cisco
+ * 192.168.0.46 - E3, c4:71:fe:34:27:4c, cisco
+ * 192.168.0.47 - W12, W1, c4:71:fe:34:28:55, cisco
+ * 192.168.0.51 - Great Hall, C1, fc:99:47:44:43:98, cisco
+ * 192.168.0.52 - E2D, E2-wap-extra, fc:99:47:94:71:19, cisco
+ * 192.168.0.53 - W2H, W2-wap-extra, fc:99:47:44:25:cb, cisco
+ * 192.168.0.54 - C2P, C2-wap2, fc:99:47:44:43:19, cisco
+ * 192.168.0.55 - C2C, C2-wap3, fc:99:47:2d:8:a4, cisco
+ * 192.168.0.57 - W2C, W2-wap, 74:ea:3a:a2:cf:ce, openwrt
+ * 192.168.0.58 - C3K, C3-wap, a0:f3:c1:ff:2a:94, openwrt
+
+## Switches
+
+ * 192.168.0.21 - 14:d6:4d:1e:4:16
+ * 192.168.0.23 - fc:75:16:68:bb:c9
+
 # Possibly old information
 
 ## network mapping in progress
