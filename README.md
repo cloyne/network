@@ -72,7 +72,7 @@ Running Debian Linux distribution as a host for Docker images. Services:
  * 192.168.0.55 - C2C, fc:99:47:2d:8:a4, cisco
  * 192.168.0.57 - W2C, 74:ea:3a:a2:cf:ce, openwrt, channel 1
  * 192.168.0.58 - C3K, a0:f3:c1:ff:2a:94, openwrt
- * 192.168.0.59 - W3C, c0:4a:00:40:e4:4c, official, channel 6
+ * 192.168.0.59 - QuietStudyRoom, c0:4a:00:40:e4:4c, official, channel 6
 
 ## Switches
 
