@@ -68,6 +68,7 @@ Running Debian Linux distribution as a host for Docker images. Services:
  * [192.168.0.47](http://192.168.0.47) - W2C, c4:71:fe:34:28:55, cisco, channel 1
  * [192.168.0.48](http://192.168.0.48) - W3A, c0:4a:00:5d:c3:f3, custom openwrt, channel 11
  * [192.168.0.49](http://192.168.0.49) - Hackerspace, c0:4a:00:40:e3:61, custom openwrt, channel 11
+ * [192.168.0.50](http://192.168.0.50) - E2StudyRoom, e8:94:f6:68:84:78, custom openwrt, channel 1
  * [192.168.0.51](http://192.168.0.51) - GreatHall, fc:99:47:44:43:98, cisco, channel 6
  * [192.168.0.52](http://192.168.0.52) - E2D, fc:99:47:94:71:19, cisco, channel 1
  * [192.168.0.53](http://192.168.0.53) - W2H, fc:99:47:44:25:cb, cisco, channel 11
