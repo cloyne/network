@@ -52,10 +52,17 @@ Running Debian Linux distribution as a host for Docker images. Services:
 
 ## Printers
 
-### printer1 ###
+### printer1 (HP LaserJet 500 MFP M525) ###
 
     Internal IP: 192.168.0.100
     Hostname:    printer1.cloyne.net
+    Location:    Library
+    MAC:         28:80:23:11:83:3C
+
+### label printer (Brother QL-710W) ###
+
+    Internal IP: 192.168.0.101
+    MAC:         00:80:92:CF:09:B1
 
 ## APs
 
