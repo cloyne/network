@@ -93,7 +93,8 @@ Running Debian Linux distribution as a host for Docker images. Services:
  * [192.168.0.24](http://192.168.0.24) - E3 - fc:75:16:68:b4:19
  * [192.168.0.25](http://192.168.0.25) - Mail Room - 14:d6:4d:1e:03:e6
  * [192.168.0.26](http://192.168.0.26) - W2 - fc:75:16:68:b4:a9
- * [192.168.0.27](http://192.168.0.27) - W3 - fc:75:16:68:b4:79
+ * [192.168.0.27](http://192.168.0.27) - W1 - fc:75:16:68:bb:99
+ * [192.168.0.28](http://192.168.0.28) - W3 - fc:75:16:68:b4:79
  
 
 # Possibly old information
