@@ -1,13 +1,23 @@
 Flashing UniFi with OpenWrt
 ---------------------------
 
-Flash OpenWrt image on the UniFi.
+[Flash OpenWrt image on the UniFi](http://wiki.openwrt.org/toh/ubiquiti/uappro#installing_a_new_firmware_image):
+* Configure your machine to `192.168.1.10`.
+* `scp openwrt-ar71xx-generic-ubnt-uap-pro-squashfs-factory.bin admin@192.168.1.XXX:/tmp/`
+* `ssh -l admin 192.168.1.XXX`
+* `fwupdate.real -m openwrt-ar71xx-generic-ubnt-uap-pro-squashfs-factory.bin -d`
 
-Login with telnet, set the password. Login with SSH.
+It reboots. Login with telnet to `192.168.1.1`:
+
+```
+telnet 192.168.1.1
+```
+
+Configure root password with `passwd`. Now disconnect from telnet and connect with SSH to `192.168.1.1`.
 
 In `/etc/config/system` configure the hostname.
 
-Disable DHCP:
+Disable DHCP by running:
 
 ```
 uci set dhcp.lan.ignore=1
@@ -18,13 +28,13 @@ uci commit dhcp
 /etc/init.d/dnsmasq disable
 ```
 
-Disable firewall:
+Disable firewall by running:
 
 ```
 /etc/init.d/firewall disable
 ```
 
-Configure `/etc/config/network`:
+Configure the LAN section in `/etc/config/network`:
 
 ```
 config interface 'lan'
@@ -37,7 +47,13 @@ config interface 'lan'
 	option ip6assign '60'
 ```
 
-In `/etc/config/wireless` configure:
+Set `/etc/config/wireless` file to (check if file originally looks simlarly, like `path`s should be the same) by doing:
+
+```
+cat > /etc/config/wireless
+```
+
+And copy & pasting in (finish with ctrl-d):
 
 ```
 config wifi-device  radio0
@@ -77,7 +93,15 @@ config wifi-iface
 	option key	'XXX'
 ```
 
-Create `/etc/hotplug.d/iface/30-bitrates`:
+Edit the `/etc/config/wireless` and set the WiFi password.
+
+Create `/etc/hotplug.d/iface/30-bitrates` by doing:
+
+```
+cat > /etc/hotplug.d/iface/30-bitrates
+```
+
+And copy & pasting:
 
 ```
 #!/bin/sh
@@ -105,4 +129,16 @@ if [ ifup = "$ACTION" ]; then
         ;;
     esac
 fi
+```
+
+Run:
+
+```
+chmod +x /etc/hotplug.d/iface/30-bitrates
+```
+
+And reboot:
+
+```
+reboot
 ```
