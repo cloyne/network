@@ -55,7 +55,7 @@ Set `/etc/config/wireless` file to (check if file originally looks simlarly, lik
 cat > /etc/config/wireless
 ```
 
-And copy & pasting in (finish with ctrl-d):
+And copy & paste in (finish with ctrl-d):
 
 ```
 config wifi-device  radio0
@@ -103,7 +103,7 @@ Create `/etc/hotplug.d/iface/30-bitrates` by doing:
 cat > /etc/hotplug.d/iface/30-bitrates
 ```
 
-And copy & pasting:
+And copy & paste in (finish with ctrl-d):
 
 ```
 #!/bin/sh
