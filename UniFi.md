@@ -47,6 +47,8 @@ config interface 'lan'
 	option ip6assign '60'
 ```
 
+Set `ipaddr` to the real IP address of the device.
+
 Set `/etc/config/wireless` file to (check if file originally looks simlarly, like `path`s should be the same) by doing:
 
 ```
