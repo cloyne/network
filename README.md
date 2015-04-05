@@ -66,24 +66,27 @@ Running Debian Linux distribution as a host for Docker images. Services:
 
 ## APs
 
- * [192.168.0.41](http://192.168.0.41) - MailRoom, 04:18:d6:20:60:44, UniFi AP-Pro, channel 1
- * [192.168.0.42](http://192.168.0.42) - C2K, a0:f3:c1:ff:2a:94, custom openwrt, channel 11
- * [192.168.0.43](http://192.168.0.43) - FamilyRoom, a0:f3:c1:ff:14:70, custom openwrt, channel 11
- * [192.168.0.44](http://192.168.0.44) - W3J, e8:94:f6:68:87:51, custom openwrt, channel 6
+ * [192.168.0.41](http://192.168.0.41) - FamilyRoom, 04:18:d6:20:60:44, UniFi AP-Pro, channel 1
+ * [192.168.0.44](http://192.168.0.44) - W3J, e8:94:f6:68:87:51, TP-Link, channel 6
  * [192.168.0.45](http://192.168.0.45) - E2J, 04:18:d6:20:58:df, UniFi AP-Pro, channel 11
- * [192.168.0.46](http://192.168.0.46) - E3J, 04:18:d6:20:5d:20, UniFi AP-Pro, channel 6
  * [192.168.0.47](http://192.168.0.47) - W2C, 04:18:d6:20:5c:fe, UniFi AP-Pro, channel 1
- * [192.168.0.48](http://192.168.0.48) - W3A, c0:4a:00:5d:c3:f3, custom openwrt, channel 11
- * [192.168.0.49](http://192.168.0.49) - Hackerspace, c0:4a:00:40:e3:61, custom openwrt, channel 11
- * [192.168.0.50](http://192.168.0.50) - E2StudyRoom, e8:94:f6:68:84:78, custom openwrt, channel 1
+ * [192.168.0.48](http://192.168.0.48) - W3A, c0:4a:00:5d:c3:f3, TP-Link, channel 11
+ * [192.168.0.49](http://192.168.0.49) - Hackerspace, c0:4a:00:40:e3:61, TP-Link, channel 11
+ * [192.168.0.50](http://192.168.0.50) - E3StudyRoom, e8:94:f6:68:84:78, TP-Link, channel 1
  * [192.168.0.51](http://192.168.0.51) - GreatHall, 04:18:d6:20:59:c8, UniFi AP-Pro, channel 6
  * [192.168.0.52](http://192.168.0.52) - E2D, 04:18:d6:20:5a:1f, UniFi AP-Pro, channel 1
  * [192.168.0.53](http://192.168.0.53) - W2H, 04:18:d6:20:59:c7, UniFi AP-Pro, channel 11
  * [192.168.0.54](http://192.168.0.54) - C2P, 04:18:d6:20:58:e4, UniFi AP-Pro, channel 6
  * [192.168.0.55](http://192.168.0.55) - C2C, 04:18:d6:20:5f:e6, UniFi AP-Pro, channel 6
- * [192.168.0.57](http://192.168.0.57) - W1E, 90:f6:52:ea:05:ec, custom openwrt, channel 6
- * [192.168.0.58](http://192.168.0.58) - C3K, 90:F6:52:2A:08:54, custom openwrt, channel 1
- * [192.168.0.59](http://192.168.0.59) - QuietStudyRoom, c0:4a:00:40:e4:4d, custom openwrt, channel 11
+ * [192.168.0.57](http://192.168.0.57) - W1E, 90:f6:52:ea:05:ec, TP-Link, channel 6
+ * [192.168.0.58](http://192.168.0.58) - C3K, 90:F6:52:2A:08:54, TP-Link, channel 1
+
+Temporary:
+
+ * [192.168.0.42](http://192.168.0.42) - C2K, a0:f3:c1:ff:2a:94, TP-Link, channel 11
+ * [192.168.0.43](http://192.168.0.43) - FamilyRoom, a0:f3:c1:ff:14:70,  TP-Link, channel 11
+ * [192.168.0.46](http://192.168.0.46) - E3J, 04:18:d6:20:5d:20, UniFi AP-Pro, channel 6
+ * [192.168.0.59](http://192.168.0.59) - QuietStudyRoom, c0:4a:00:40:e4:4d, TP-Link, channel 11
 
 ## Switches
  * [192.168.0.20](http://192.168.0.20) - Network Room 2 - fc:75:16:68:b4:49
