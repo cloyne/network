@@ -41,6 +41,7 @@ Running Debian Linux distribution as a host for Docker images. Services:
 
     External IP: 50.0.115.228
     Hostname:    server2.cloyne.net
+    Internal IP: 10.20.8.10
 
 Running Debian Linux distribution as a host for Docker images. Services:
  * Primary DNS server
