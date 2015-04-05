@@ -2,18 +2,18 @@ Flashing UniFi with OpenWrt
 ---------------------------
 
 [Flash OpenWrt image on the UniFi](http://wiki.openwrt.org/toh/ubiquiti/uappro#installing_a_new_firmware_image):
-* Configure your machine to `192.168.1.10`.
+* Configure your machine to an IP address in the range used by the AP. By default the AP uses `192.168.1.20`.
 * `scp openwrt-ar71xx-generic-ubnt-uap-pro-squashfs-factory.bin admin@192.168.1.XXX:/tmp/`
 * `ssh -l admin 192.168.1.XXX`
 * `fwupdate.real -m openwrt-ar71xx-generic-ubnt-uap-pro-squashfs-factory.bin -d`
 
-It reboots. Login with telnet to `192.168.1.1`:
+It reboots into OpenWrt which uses `192.168.1.1` as its initial IP address. Configure your machine to be in that range. Login with telnet:
 
 ```
 telnet 192.168.1.1
 ```
 
-Configure root password with `passwd`. Now disconnect from telnet and connect with SSH to `192.168.1.1`.
+Configure root password with `passwd`. Now disconnect from telnet and connect with SSH to `192.168.1.1` with username `root`.
 
 In `/etc/config/system` configure the hostname.
 
