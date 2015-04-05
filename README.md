@@ -19,10 +19,11 @@ Sonic.net network operations phone number is +1-877-706-662. Equipment directly 
 
 ## Main router
 
-    External IP: 50.0.115.226
-    Internal IP: 10.20.8.1
-    Netmask:     255.255.252.0 (/22)
-    Hostname:    router.cloyne.net
+    External IP:       50.0.115.226
+    Internal IP:       10.20.8.1
+    Netmask:           255.255.252.0 (/22)
+    Hostname:          router.cloyne.net
+    DHCP client range: 10.20.8.100-10.20.11.200
 
 It is a [Mikrotik RouterBoard 450G](http://routerboard.com/RB450G). See `router` directory for more information.
 
@@ -55,14 +56,14 @@ Running Debian Linux distribution as a host for Docker images. Services:
 
 ### printer1 (HP LaserJet 500 MFP M525) ###
 
-    Internal IP: 10.20.8.100
+    Internal IP: 10.20.8.90
     Hostname:    printer1.cloyne.net
     Location:    Library
     MAC:         28:80:23:11:83:3C
 
 ### label printer (Brother QL-710W) ###
 
-    Internal IP: 10.20.8.101
+    Internal IP: 10.20.8.91
     MAC:         00:80:92:CF:09:B1
 
 ## APs
