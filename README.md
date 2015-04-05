@@ -5,15 +5,15 @@
 Through [Sonic.net](http://sonic.net/), fiber itself is operated by AT&T.
 
     50.0.115.224/28
-    Network:     50.0.115.224 (838890464)
-    Netmask:     255.255.255.240
-    Gateway:     50.0.115.225
-    Broadcast:   50.0.115.239 (838890479)
-    Primary DNS: 208.201.224.11
-    Second. DNS: 208.201.224.33
-    Time:        64.142.1.20
-    Bandwidth:   50/50 Mbit/s
-    Usable address range:  50.0.115.226 - 50.0.115.238 (13 addresses)
+    Network:              50.0.115.224 (838890464)
+    Netmask:              255.255.255.240
+    Gateway:              50.0.115.225
+    Broadcast:            50.0.115.239 (838890479)
+    Primary DNS:          208.201.224.11
+    Second. DNS:          208.201.224.33
+    Time:                 64.142.1.20
+    Bandwidth:            50/50 Mbit/s
+    Usable address range: 50.0.115.226 - 50.0.115.238 (13 addresses)
 
 Sonic.net network operations phone number is +1-877-706-662. Equipment directly connected to the fiber has to have configured fixed 100 Mbit/s full-duplex configuration and autonegotiation must be disabled.
 
@@ -23,7 +23,7 @@ Sonic.net network operations phone number is +1-877-706-662. Equipment directly 
     Internal IP:       10.20.8.1
     Netmask:           255.255.252.0 (/22)
     Hostname:          router.cloyne.net
-    DHCP client range: 10.20.8.100-10.20.11.200
+    DHCP client range: 10.20.8.100 - 10.20.11.200 (869 addresses)
 
 It is a [Mikrotik RouterBoard 450G](http://routerboard.com/RB450G). See `router` directory for more information.
 
