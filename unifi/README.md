@@ -64,7 +64,7 @@ config wifi-device  radio0
 	option hwmode	11a
 	option path	'platform/ar934x_wmac'
 	option htmode	HT20
-	option require_mode n
+	#option require_mode n
 	option txpower 17
 	#option basic_rate '6000'
 
@@ -82,7 +82,7 @@ config wifi-device  radio1
 	option hwmode	11g
 	option path	'pci0000:00/0000:00:00.0'
 	option htmode	HT20
-	option require_mode n
+	#option require_mode n
 	option txpower 17
 	#option basic_rate '6000'
 
