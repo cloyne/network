@@ -69,20 +69,20 @@ Running Debian Linux distribution as a host for Docker images. Services:
 
 ## APs
 
- * [10.20.8.40](http://10.20.8.40) - FamilyRoom, 04:18:d6:20:60:44, UniFi AP-Pro, channel 1
- * [10.20.8.41](http://10.20.8.41) - W3J, e8:94:f6:68:87:51, TP-Link, channel 6
- * [10.20.8.42](http://10.20.8.42) - E2J, 04:18:d6:20:58:df, UniFi AP-Pro, channel 11
- * [10.20.8.43](http://10.20.8.43) - W2C, 04:18:d6:20:5c:fe, UniFi AP-Pro, channel 1
- * [10.20.8.44](http://10.20.8.44) - W3A, c0:4a:00:5d:c3:f3, TP-Link, channel 11
- * [10.20.8.45](http://10.20.8.45) - Hackerspace, c0:4a:00:40:e3:61, TP-Link, channel 11
+ * [10.20.8.40](http://10.20.8.40) - FamilyRoom, 04:18:d6:20:60:44, UniFi AP-Pro, channel 6, 140
+ * [10.20.8.41](http://10.20.8.41) - W3J, e8:94:f6:68:87:51, TP-Link, channel 11
+ * [10.20.8.42](http://10.20.8.42) - E2J, 04:18:d6:20:58:df, UniFi AP-Pro, channel 6, 132
+ * [10.20.8.43](http://10.20.8.43) - W2C, 04:18:d6:20:5c:fe, UniFi AP-Pro, channel 6, 124
+ * [10.20.8.44](http://10.20.8.44) - W3A, c0:4a:00:5d:c3:f3, TP-Link, channel 1
+ * [10.20.8.45](http://10.20.8.45) - Hackerspace, c0:4a:00:40:e3:61, TP-Link, channel 1
  * [10.20.8.46](http://10.20.8.46) - E3StudyRoom, e8:94:f6:68:84:78, TP-Link, channel 1
- * [10.20.8.47](http://10.20.8.47) - GreatHall, 04:18:d6:20:59:c8, UniFi AP-Pro, channel 6
- * [10.20.8.48](http://10.20.8.48) - E2D, 04:18:d6:20:5a:1f, UniFi AP-Pro, channel 1
- * [10.20.8.49](http://10.20.8.49) - W2H, 04:18:d6:20:59:c7, UniFi AP-Pro, channel 11
- * [10.20.8.50](http://10.20.8.50) - C2P, 04:18:d6:20:58:e4, UniFi AP-Pro, channel 6
- * [10.20.8.51](http://10.20.8.51) - C2C, 04:18:d6:20:5f:e6, UniFi AP-Pro, channel 6
- * [10.20.8.52](http://10.20.8.52) - W1E, 90:f6:52:ea:05:ec, TP-Link, channel 6
- * [10.20.8.53](http://10.20.8.53) - C3K, 90:F6:52:2A:08:54, TP-Link, channel 1
+ * [10.20.8.47](http://10.20.8.47) - GreatHall, 04:18:d6:20:59:c8, UniFi AP-Pro, channel 1, 116
+ * [10.20.8.48](http://10.20.8.48) - E2D, 04:18:d6:20:5a:1f, UniFi AP-Pro, channel 11, 108
+ * [10.20.8.49](http://10.20.8.49) - W2H, 04:18:d6:20:59:c7, UniFi AP-Pro, channel 1, 100
+ * [10.20.8.50](http://10.20.8.50) - C2P, 04:18:d6:20:58:e4, UniFi AP-Pro, channel 11, 64
+ * [10.20.8.51](http://10.20.8.51) - C2C, 04:18:d6:20:5f:e6, UniFi AP-Pro, channel 1, 56
+ * [10.20.8.52](http://10.20.8.52) - W1E, 90:f6:52:ea:05:ec, TP-Link, channel 11
+ * [10.20.8.53](http://10.20.8.53) - C3K, 90:F6:52:2A:08:54, TP-Link, channel 6
 
 Old:
 
