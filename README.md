@@ -92,7 +92,7 @@ Old:
  * [192.168.0.59](http://192.168.0.59) - QuietStudyRoom, c0:4a:00:40:e4:4d, TP-Link, channel 11
 
 ## Switches
-
+ Dlink Smart Console Utility is a good management software to see the status of the switches.
  * [10.20.8.20](http://10.20.8.20) - Network Room 2, fc:75:16:68:b4:49
  * [10.20.8.21](http://10.20.8.21) - C2, 14:d6:4d:1e:4:16
  * [10.20.8.22](http://10.20.8.22) - E2, fc:75:16:68:bb:f9
