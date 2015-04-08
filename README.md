@@ -92,7 +92,7 @@ Old:
  * [192.168.0.59](http://192.168.0.59) - QuietStudyRoom, c0:4a:00:40:e4:4d, TP-Link, channel 11
 
 ## Switches
- Dlink Smart Console Utility is a good management software to see the status of the switches.
+
  * [10.20.8.20](http://10.20.8.20) - Network Room 2, fc:75:16:68:b4:49
  * [10.20.8.21](http://10.20.8.21) - C2, 14:d6:4d:1e:4:16
  * [10.20.8.22](http://10.20.8.22) - E2, fc:75:16:68:bb:f9
@@ -102,6 +102,8 @@ Old:
  * [10.20.8.26](http://10.20.8.26) - W2, fc:75:16:68:b4:a9
  * [10.20.8.27](http://10.20.8.27) - Network Room 1, fc:75:16:68:bb:99
  * [10.20.8.28](http://10.20.8.28) - W3, fc:75:16:68:b4:79
+
+We use Dlink Smart Console Utility to manage IP allocations of switches. Switches have web interface to manage their ports.
 
 ## Mesh
 
