@@ -103,7 +103,7 @@ Old:
  * [10.20.8.27](http://10.20.8.27) - Network Room 1, fc:75:16:68:bb:99
  * [10.20.8.28](http://10.20.8.28) - W3, fc:75:16:68:b4:79
 
-We use Dlink Smart Console Utility to manage IP allocations of switches. Switches have web interface to manage their ports.
+We use Dlink Smart Console Utility to manage IP allocations of switches. Switches have web interface to manage their ports. The default gateway port is port 1 and DHCP traffic is only allowed through that port. To change this, edit the security settings in the switch's web configuration by going to security -> dhcp screening. 
 
 ## Mesh
 
