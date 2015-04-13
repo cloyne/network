@@ -42,8 +42,9 @@ config interface 'lan'
 	option force_link '1'
 	option type 'bridge'
 	option proto 'static'
-	option ipaddr '192.168.0.XXX'
-	option netmask '255.255.0.0'
+	option ipaddr '10.20.8.XXX'
+	option netmask '255.255.252.0'
+	option gateway '10.20.8.1'
 	option ip6assign '60'
 ```
 
