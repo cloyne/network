@@ -20,10 +20,10 @@ Sonic.net network operations phone number is +1-877-706-662. Equipment directly 
 ## Main router
 
     External IP:       50.0.115.226
-    Internal IP:       10.20.8.1
+    Internal IP:       10.20.32.1
     Netmask:           255.255.252.0 (/22)
     Hostname:          router.cloyne.net
-    DHCP client range: 10.20.8.100 - 10.20.11.200 (869 addresses)
+    DHCP client range: 10.20.32.100 - 10.20.11.200 (869 addresses)
 
 It is a [Mikrotik RouterBoard 450G](http://routerboard.com/RB450G). See `router` directory for more information.
 
@@ -41,7 +41,7 @@ Running Debian Linux distribution as a host for Docker images. Services:
 
     External IP: 50.0.115.228
     Hostname:    server2.cloyne.net
-    Internal IP: 10.20.8.10
+    Internal IP: 10.20.32.10
 
 Running Debian Linux distribution as a host for Docker images. Services:
  * Primary DNS server
@@ -57,32 +57,32 @@ Running Debian Linux distribution as a host for Docker images. Services:
 
 ### printer1 (HP LaserJet 500 MFP M525) ###
 
-    Internal IP: 10.20.8.90
+    Internal IP: 10.20.32.90
     Hostname:    printer1.cloyne.net
     Location:    Library
     MAC:         28:80:23:11:83:3C
 
 ### label printer (Brother QL-710W) ###
 
-    Internal IP: 10.20.8.91
+    Internal IP: 10.20.32.91
     MAC:         00:80:92:CF:09:B1
 
 ## APs
 
- * [10.20.8.40](http://10.20.8.40) - FamilyRoom, 04:18:d6:20:60:44, Ubiquiti UniFi AP Pro, channel 6, 140
- * [10.20.8.41](http://10.20.8.41) - W3J, e8:94:f6:68:87:51, TP-LINK TL-WR1043ND v2, channel 11
- * [10.20.8.42](http://10.20.8.42) - E2J, 04:18:d6:20:58:df, Ubiquiti UniFi AP Pro, channel 6, 132
- * [10.20.8.43](http://10.20.8.43) - W2C, 04:18:d6:20:5c:fe, Ubiquiti UniFi AP Pro, channel 6, 124
- * [10.20.8.44](http://10.20.8.44) - W3A, c0:4a:00:5d:c3:f3, TP-LINK TL-WR1043ND v2, channel 1
- * [10.20.8.45](http://10.20.8.45) - Hackerspace, c0:4a:00:40:e3:61, TP-LINK TL-WR1043ND v2, channel 1
- * [10.20.8.46](http://10.20.8.46) - E3StudyRoom, e8:94:f6:68:84:78, TP-LINK TL-WR1043ND v2, channel 1
- * [10.20.8.47](http://10.20.8.47) - GreatHall, 04:18:d6:20:59:c8, Ubiquiti UniFi AP Pro, channel 1, 116
- * [10.20.8.48](http://10.20.8.48) - E2D, 04:18:d6:20:5a:1f, Ubiquiti UniFi AP Pro, channel 11, 108
- * [10.20.8.49](http://10.20.8.49) - W2H, 04:18:d6:20:59:c7, Ubiquiti UniFi AP Pro, channel 1, 100
- * [10.20.8.50](http://10.20.8.50) - C2P, 04:18:d6:20:58:e4, Ubiquiti UniFi AP Pro, channel 11, 64
- * [10.20.8.51](http://10.20.8.51) - C2C, 04:18:d6:20:5f:e6, Ubiquiti UniFi AP Pro, channel 1, 56
- * [10.20.8.52](http://10.20.8.52) - W1E, 90:f6:52:ea:05:ec, TP-LINK TL-WR1043ND, channel 11
- * [10.20.8.53](http://10.20.8.53) - C3K, 90:F6:52:2A:08:54, TP-LINK TL-WR1043ND, channel 6
+ * [10.20.32.40](http://10.20.32.40) - FamilyRoom, 04:18:d6:20:60:44, Ubiquiti UniFi AP Pro, channel 6, 140
+ * [10.20.32.41](http://10.20.32.41) - W3J, e8:94:f6:68:87:51, TP-LINK TL-WR1043ND v2, channel 11
+ * [10.20.32.42](http://10.20.32.42) - E2J, 04:18:d6:20:58:df, Ubiquiti UniFi AP Pro, channel 6, 132
+ * [10.20.32.43](http://10.20.32.43) - W2C, 04:18:d6:20:5c:fe, Ubiquiti UniFi AP Pro, channel 6, 124
+ * [10.20.32.44](http://10.20.32.44) - W3A, c0:4a:00:5d:c3:f3, TP-LINK TL-WR1043ND v2, channel 1
+ * [10.20.32.45](http://10.20.32.45) - Hackerspace, c0:4a:00:40:e3:61, TP-LINK TL-WR1043ND v2, channel 1
+ * [10.20.32.46](http://10.20.32.46) - E3StudyRoom, e8:94:f6:68:84:78, TP-LINK TL-WR1043ND v2, channel 1
+ * [10.20.32.47](http://10.20.32.47) - GreatHall, 04:18:d6:20:59:c8, Ubiquiti UniFi AP Pro, channel 1, 116
+ * [10.20.32.48](http://10.20.32.48) - E2D, 04:18:d6:20:5a:1f, Ubiquiti UniFi AP Pro, channel 11, 108
+ * [10.20.32.49](http://10.20.32.49) - W2H, 04:18:d6:20:59:c7, Ubiquiti UniFi AP Pro, channel 1, 100
+ * [10.20.32.50](http://10.20.32.50) - C2P, 04:18:d6:20:58:e4, Ubiquiti UniFi AP Pro, channel 11, 64
+ * [10.20.32.51](http://10.20.32.51) - C2C, 04:18:d6:20:5f:e6, Ubiquiti UniFi AP Pro, channel 1, 56
+ * [10.20.32.52](http://10.20.32.52) - W1E, 90:f6:52:ea:05:ec, TP-LINK TL-WR1043ND, channel 11
+ * [10.20.32.53](http://10.20.32.53) - C3K, 90:F6:52:2A:08:54, TP-LINK TL-WR1043ND, channel 6
 
 Old:
 
@@ -93,15 +93,15 @@ Old:
 
 ## Switches
 
- * [10.20.8.20](http://10.20.8.20) - Network Room 2, fc:75:16:68:b4:49
- * [10.20.8.21](http://10.20.8.21) - C2, 14:d6:4d:1e:4:16
- * [10.20.8.22](http://10.20.8.22) - E2, fc:75:16:68:bb:f9
- * [10.20.8.23](http://10.20.8.23) - C3, fc:75:16:68:bb:c9
- * [10.20.8.24](http://10.20.8.24) - E3, fc:75:16:68:b4:19
- * [10.20.8.25](http://10.20.8.25) - Mail Room, 14:d6:4d:1e:03:e6
- * [10.20.8.26](http://10.20.8.26) - W2, fc:75:16:68:b4:a9
- * [10.20.8.27](http://10.20.8.27) - Network Room 1, fc:75:16:68:bb:99
- * [10.20.8.28](http://10.20.8.28) - W3, fc:75:16:68:b4:79
+ * [10.20.32.20](http://10.20.32.20) - Network Room 2, fc:75:16:68:b4:49
+ * [10.20.32.21](http://10.20.32.21) - C2, 14:d6:4d:1e:4:16
+ * [10.20.32.22](http://10.20.32.22) - E2, fc:75:16:68:bb:f9
+ * [10.20.32.23](http://10.20.32.23) - C3, fc:75:16:68:bb:c9
+ * [10.20.32.24](http://10.20.32.24) - E3, fc:75:16:68:b4:19
+ * [10.20.32.25](http://10.20.32.25) - Mail Room, 14:d6:4d:1e:03:e6
+ * [10.20.32.26](http://10.20.32.26) - W2, fc:75:16:68:b4:a9
+ * [10.20.32.27](http://10.20.32.27) - Network Room 1, fc:75:16:68:bb:99
+ * [10.20.32.28](http://10.20.32.28) - W3, fc:75:16:68:b4:79
 
 We use Dlink Smart Console Utility to manage IP allocations of switches. Switches have web interface to manage their ports. The default gateway port is port 1 and DHCP traffic is only allowed through that port. To change this, edit the security settings in the switch's web configuration by going to security -> dhcp screening. 
 
