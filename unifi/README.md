@@ -117,7 +117,7 @@ if [ ifup = "$ACTION" ]; then
     case "$DEVICE" in
         wlan*)
             logger setting bitrate for device "$DEVICE" on interface "$INTERFACE"
-            iw "$DEVICE" set bitrates legacy-2.4 6 9 12 18 24 36 48 54 ht-mcs-2.4 lgi-2.4
+            iw "$DEVICE" set bitrates legacy-2.4 6 9 12 18 24 36 48 54
         ;;
         br-*)
             # Bridged interface, check if any wifi interface is member
@@ -125,7 +125,7 @@ if [ ifup = "$ACTION" ]; then
                 case "$i" in
                     wlan*)
                         logger setting bitrate for device "$i" on interface "$INTERFACE"
-                        iw "$i" set bitrates legacy-2.4 6 9 12 18 24 36 48 54 ht-mcs-2.4 lgi-2.4
+                        iw "$i" set bitrates legacy-2.4 6 9 12 18 24 36 48 54
                     ;;
                 esac
             done
