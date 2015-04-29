@@ -107,4 +107,4 @@ We use Dlink Smart Console Utility to manage IP allocations of switches. Switche
 
 ## Mesh
 
- * [10.20.11.210](http://10.20.11.210) – Cloyne-Kingman, 24:A4:3C:9C:F6:AD
+ * [10.20.35.210](http://10.20.35.210) – Cloyne-Kingman, 24:A4:3C:9C:F6:AD
