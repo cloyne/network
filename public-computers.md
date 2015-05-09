@@ -89,6 +89,8 @@ CLO LPTP 00:
     Purchase Date: 2014-11-16
     Purchser: Martins, Jason (James) Ebay
 
+[Google Spreadsheet for lending it to house members](https://docs.google.com/spreadsheets/d/1cawmFrIqZ9zCtCbC9C1DP4vjb5q2LYZDw0VjWWfMdlE/edit).
+
 ### Chrome OS Installed Extensions:
 
     Tab Wrangler: Closes inactive tabs
