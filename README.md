@@ -23,7 +23,7 @@ Sonic.net network operations phone number is +1-877-706-662. Equipment directly 
     Internal IP:       10.20.32.1
     Netmask:           255.255.252.0 (/22)
     Hostname:          router.cloyne.net
-    DHCP client range: 10.20.32.100 - 10.20.11.190 (859 addresses)
+    DHCP client range: 10.20.32.100 - 10.20.35.190 (859 addresses)
 
 It is a [Mikrotik RouterBoard 450G](http://routerboard.com/RB450G). See `router` directory for more information.
 
