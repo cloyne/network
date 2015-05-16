@@ -53,6 +53,15 @@ Running Debian Linux distribution as a host for Docker images. Services:
  * [phpPgAdmin](http://cloyne.net/phppgadmin/)
  * [Cloyne.org](http://cloyne.org) blog (Wordpress)
 
+### server3 ###
+
+    External IP: 50.0.115.229
+    Hostname:    server3.cloyne.net
+    Internal IP: 10.20.32.11
+
+Running Ubuntu Server Linux distribution as a host for Docker images. Services:
+ * ownCloud
+
 ## Printers
 
 ### printer1 (HP LaserJet 500 MFP M525) ###
