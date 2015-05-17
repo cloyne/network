@@ -59,7 +59,7 @@ Running Debian Linux distribution as a host for Docker images. Services:
     Hostname:    server3.cloyne.net
     Internal IP: 10.20.32.11
 
-Running Ubuntu Server Linux distribution as a host for Docker images. Services:
+Running Ubuntu Server Linux distribution as a host for Docker images. It contains 8 x 3 TB hard drives, 8 x 750 GB drives, configured in pairs into RAID-1, combined into a 15 TB LVM volume. Services:
  * ownCloud
 
 ## Printers
