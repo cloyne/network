@@ -83,8 +83,8 @@ Running Ubuntu Server Linux distribution as a host for Docker images. It contain
  * [10.20.32.42](http://10.20.32.42) - E2J, 04:18:d6:20:58:df, Ubiquiti UniFi AP Pro, channel 6, 132
  * [10.20.32.43](http://10.20.32.43) - W2C, 04:18:d6:20:5c:fe, Ubiquiti UniFi AP Pro, channel 6, 124
  * [10.20.32.44](http://10.20.32.44) - W3A, c0:4a:00:5d:c3:f3, TP-LINK TL-WR1043ND v2, channel 1
- * [10.20.32.45](http://10.20.32.45) - Hackerspace, c0:4a:00:40:e3:61, TP-LINK TL-WR1043ND v2, channel 1
- * [10.20.32.46](http://10.20.32.46) - E3StudyRoom, e8:94:f6:68:84:78, TP-LINK TL-WR1043ND v2, channel 1
+ * [10.20.32.45](http://10.20.32.45) - W0B, c0:4a:00:40:e3:61, TP-LINK TL-WR1043ND v2, channel 1
+ * [10.20.32.46](http://10.20.32.46) - E3AB, e8:94:f6:68:84:78, TP-LINK TL-WR1043ND v2, channel 1
  * [10.20.32.47](http://10.20.32.47) - GreatHall, 04:18:d6:20:59:c8, Ubiquiti UniFi AP Pro, channel 1, 116
  * [10.20.32.48](http://10.20.32.48) - E2D, 04:18:d6:20:5a:1f, Ubiquiti UniFi AP Pro, channel 11, 108
  * [10.20.32.49](http://10.20.32.49) - W2H, 04:18:d6:20:59:c7, Ubiquiti UniFi AP Pro, channel 1, 100
