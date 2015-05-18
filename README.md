@@ -103,14 +103,14 @@ Old:
 ## Switches
 
  * [10.20.32.20](http://10.20.32.20) - Network Room 2, fc:75:16:68:b4:49
- * [10.20.32.21](http://10.20.32.21) - C2, 14:d6:4d:1e:4:16
- * [10.20.32.22](http://10.20.32.22) - E2, fc:75:16:68:bb:f9
- * [10.20.32.23](http://10.20.32.23) - C3, fc:75:16:68:bb:c9
- * [10.20.32.24](http://10.20.32.24) - E3, fc:75:16:68:b4:19
+ * [10.20.32.21](http://10.20.32.21) - C2K, 14:d6:4d:1e:4:16
+ * [10.20.32.22](http://10.20.32.22) - E2SC, fc:75:16:68:bb:f9
+ * [10.20.32.23](http://10.20.32.23) - C3L, fc:75:16:68:bb:c9
+ * [10.20.32.24](http://10.20.32.24) - E3SB, fc:75:16:68:b4:19
  * [10.20.32.25](http://10.20.32.25) - Mail Room, 14:d6:4d:1e:03:e6
- * [10.20.32.26](http://10.20.32.26) - W2, fc:75:16:68:b4:a9
+ * [10.20.32.26](http://10.20.32.26) - W2SB, fc:75:16:68:b4:a9
  * [10.20.32.27](http://10.20.32.27) - Network Room 1, fc:75:16:68:bb:99
- * [10.20.32.28](http://10.20.32.28) - W3, fc:75:16:68:b4:79
+ * [10.20.32.28](http://10.20.32.28) - W3SB, fc:75:16:68:b4:79
 
 We use Dlink Smart Console Utility to manage IP allocations of switches. Switches have web interface to manage their ports. The default gateway port is port 1 and DHCP traffic is only allowed through that port. To change this, edit the security settings in the switch's web configuration by going to security -> dhcp screening. 
 
