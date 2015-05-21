@@ -62,6 +62,14 @@ Running Debian Linux distribution as a host for Docker images. Services:
 Running Ubuntu Server Linux distribution as a host for Docker images. It contains 8 x 3 TB hard drives, 8 x 750 GB drives, configured in pairs into RAID-1, combined into a 15 TB LVM volume. Services:
  * ownCloud
 
+## Computers
+
+### Maintanance room ###
+
+    Internal IP: 10.20.32.80
+    Hostname:    maintenance.cloyne.net
+    MAC:         64:31:50:25:B1:84
+
 ## Printers
 
 ### printer1 (HP LaserJet 500 MFP M525) ###
