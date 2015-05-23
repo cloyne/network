@@ -91,15 +91,15 @@ interested in)
 If you want to change the e-mail address you are subscribed to mailing
 lists with, talk to Graham.
 
-We have a website (http://cloyne.org/)! And now we have also a
-calendar of events on the website. All of you should receive an e-mail
+We have a website (http://cloyne.org/). And we have also a calendar
+of events on the website. All of you should receive an e-mail
 with your username and temporary password for the website. With it
 you can login to the website:
 
 http://cloyne.org/wp-login.php
 
 You can add blog posts, add events to the calendar, and upload
-photos and videos to our media library. Enjoy. :-)
+photos and videos to our media library. The site is yours. Enjoy it.
 
 If you prefer Facebook, we also have a Facebook group:
 
@@ -125,4 +125,116 @@ e-mail address with which you are subscribed to one which will last
 (not @berkeley address).
 
 http://cloyne.org/lists/
+```
+
+Instructions
+============
+
+Later on you should send few e-mails with various instructions.
+
+`Adding events to your Google Calendar` template:
+
+```
+If you want, you can add events from cloyne.org website to your Google
+Calendar. On events page you have iCal link:
+
+http://cloyne.org/events/
+
+Copy the URL and add it to your Google Calendar as described for you
+on the following page under the section "Example: Subscribing to
+Events Using Google Calendar":
+
+http://wp-events-plugin.com/documentation/event-ical-feeds/
+```
+
+`How to use Gmail for mailing lists` template:
+
+```
+Do you feel overwhelmed with all the e-mails coming your way over our
+mailing lists? Are you using Gmail? Worry not, there are some easy
+tricks to empower you and get you in charge of which discussions you
+want to read and which to ignore.
+
+There are two ways of dealing with mailing list:
+- you can label and filter them
+- or you can mute individual conversations you don't want to appear in
+your inbox anymore
+
+You can get the whole mailing list be filtered under one label. instructions:
+
+http://googlesystem.blogspot.com/2007/11/filter-messages-from-mailing-list-in.html
+
+Gmail has support for muting one conversation:
+
+https://support.google.com/mail/answer/47787?hl=en
+
+You mute it once (when you discover that topic does not interest you)
+and this is it.
+
+"When you mute a conversation, new messages added to the conversation
+bypass your inbox so that the conversation stays archived."
+
+I propose the following settings:
+- for announce mailing list, create a label and filter it under that
+e-mail, but leave e-mails to come to you inbox
+- for clones and other mailing lists, or:
+  - use mute feature to mute conversations you are not interested in, or
+  - you create a label and filter for it and set that it skips the
+inbox and is automatically archived
+
+If you have any questions about any of this, feel free to ask.
+```
+
+`Everyone can post to our blog and create events` template:
+
+```
+Short reminder that if anyone would like to post to a blog at
+cloyne.org or create an event, you can do that! You should all
+receive username you can use to login into the site. If not,
+register here:
+
+http://cloyne.org/wp-login.php?action=register
+
+And then send me an e-mail that I give you permissions. After that,
+you can make blog posts and events through admin interface:
+
+http://cloyne.org/wp-admin/
+
+For now, we do not have any rules what blog posts are OK, and I like
+that, so let's try for now like that. If anyone feels that anything
+published is objectionable, feel empowered to bring it up to or author
+or managers.
+
+Otherwise, I would really encourage all of you to take it for your own
+media. Post blog posts of what you are doing, what you are proud of,
+what interesting happened, anything you would like to share with house
+and visitors of our website. Make it fun, sad, serious, [insert your
+favorite adjective], make it yours.
+
+Create events. By creating an event, you inform the rest of the house
+that something is happening, and you also clearly show that the space
+will be in use.
+```
+
+`Printing` template:
+
+```
+For printing, you can plug your USB flash drive from front.
+And you can use it both for printing from or scanning to.
+
+When you are printing and you are selecting trays manually, don't use
+Tray 1. Tray 1 is the one where you have to manually feed the paper.
+So it will not print until you give the printer the paper. But even
+more importantly: if you open Tray 1, remember to close it. If it is
+open, it will require paper there for anyone else who will want to
+print, and nobody else will be able to print.
+
+The printer is sometimes paused. I do not know who is pressing "pause",
+but if you pause the printer, nobody else can print. There will be a
+small message on the printer that it is paused and you unpause it by
+pressing a small circular arrow button on the top left on the screen.
+So: don't pause the printer.
+
+Please remember: always print two-sided (or even multiple pages on
+one side). You configure that on your computer when you are printing.
 ```
