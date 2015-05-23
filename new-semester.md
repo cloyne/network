@@ -19,9 +19,9 @@ Mailing lists
 
 For mailing list we use [Sympa](http://sympa.org/) installed at [http://cloyne.org/lists/](http://cloyne.org/lists/).
 Tasks at the beginning of the semester are:
+* Remove old members from `announce@cloyne.org` mailing list and add current members.
 * Rename current `clones@cloyne.org` mailing list to `clones.XXX@cloyne.org` mailing list, where `XXX` consist of a
 year and season, like `clones.2014f@cloyne.org`, `clones.2015s@cloyne.org` or `clones.2015su@cloyne.org` (for summer).
-* Remove old members from `announce@cloyne.org` mailing list and add current members.
 * Create new `clones@cloyne.org` mailing list and add current members.
 * Update `alumni@cloyne.org` mailing list to include the new `clones.XXX@cloyne.org` mailing list as data source.
 
@@ -51,8 +51,31 @@ end of the page.
 * Add to "List inclusion" the new `clones.XXX` mailing list inclusion. For example, `clones.2015s`.
 Click "Update" at the end of the page.
 
+Wordpress
+---------
 
-Template:
+* [Using this script](https://github.com/cloyne/docker-blog/blob/master/users-csv.py) you can create a CSV file from a list of e-mail addresses and names, the same as used for mailing lists. ```./users-csv.py < list > out.csv```
+* All users in the CSV file will be created with `author` permission which allows them to post blog posts, events,
+upload media content, but does not allow them to change content of others.
+* Open [http://cloyne.org/wp-admin/users.php?page=import-users-from-csv](http://cloyne.org/wp-admin/users.php?page=import-users-from-csv).
+* Select the CSV file, check "Send to new users" and "Show password nag on new users signon ". Click "Import".
+
+It might happen that the site time-outs after the import. This is normal. New users will be imported and e-mail
+notification will be send to them inviting them to set the password.
+
+Notifying members
+-----------------
+
+After all of the above was done, you should send a message to members informing them what is available to them and
+how to use it.
+
+The `announce@cloyne.org` e-mail template:
+
+
+
+The `clones@cloyne.org` e-mail template:
+
+The `clones.XXX@cloyne.org` e-mail template:
 
 ```
 The clones@cloyne.org mailing list has been renamed to
