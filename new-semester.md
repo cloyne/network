@@ -71,9 +71,43 @@ how to use it.
 
 The `announce@cloyne.org` e-mail template:
 
+```
+Welcome to Cloyne from your network manager. I configured our mailing
+lists for the new period. For those who are new to Cloyne, here are few
+instructions on how to navigate the digital Cloynosphere.
 
+We have two main mailing lists to which you are all subscribed initially:
 
-The `clones@cloyne.org` e-mail template:
+announce@cloyne.org - to which managers will be sending important
+information to all of us, any discussion direct to:
+
+clones@cloyne.org - discussion mailing list for all of us to keep
+virtual flow of information going, any discussion goes, but remember
+that the whole house is subscribed to this mailing list (if needed,
+feel free to request a dedicated mailing list for your project, group,
+team, interests, etc., so that members can subscribe to those they are
+interested in)
+
+If you want to change the e-mail address you are subscribed to mailing
+lists with, talk to Graham.
+
+We have a website (http://cloyne.org/)! And now we have also a
+calendar of events on the website. All of you should receive an e-mail
+with your username and temporary password for the website. With it
+you can login to the website:
+
+http://cloyne.org/wp-login.php
+
+You can add blog posts, add events to the calendar, and upload
+photos and videos to our media library. Enjoy. :-)
+
+If you prefer Facebook, we also have a Facebook group:
+
+https://www.facebook.com/groups/1479825148929634/
+
+If anyone is interested in helping doing computer, network, and similar
+stuff, tell me and let's hack together. :-)
+```
 
 The `clones.XXX@cloyne.org` e-mail template:
 
@@ -90,5 +124,5 @@ Feel free to use them. Feel free to unsubscribe. Feel free to change the
 e-mail address with which you are subscribed to one which will last
 (not @berkeley address).
 
-http://cloyne.org/lists/lists
+http://cloyne.org/lists/
 ```
