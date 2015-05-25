@@ -216,11 +216,51 @@ that something is happening, and you also clearly show that the space
 will be in use.
 ```
 
-`Printing` template:
+`Scanning and printing` template:
 
 ```
-For printing, you can plug your USB flash drive from front.
-And you can use it both for printing from or scanning to.
+We have a house scanner and printer. Printing operates on karma box
+principle, 5 cents per page. When printing, please throw that amount
+into the karma box next to the printer.
+
+Scanning is easy, you can scan it to the USB flash drive, or send
+the scanned document to your e-mail address.
+
+For printing, you have multiple ways you can print. The easiest is to
+configure it on your computer as a network printer.
+
+Open the printer configuration on your computer and it will probably
+find this printer; otherwise, you can add it with the following
+information:
+- name: [Library] HP LaserJet 500 MFP M525
+- type: HP LaserJet 500 MFP M525
+- IP Address: 10.20.32.90
+- address: printer1.cloyne.net
+
+When prompted, do not select "share printer".
+
+To install for Windows 7, you should search on Goggle for "HP Universal
+Print Driver for Windows PCL6" and install it for your system (first
+hit is the right one), and then you will get that screen you have on
+instructions. Windows 8 people don’t have to install anything, it should
+just work.
+
+Alternativelly, you can plug your USB flash drive from the front.
+
+You can e-mail the document you want to print to:
+
+elvi834egmi34@hpeprint.com
+
+But this will waste one sheet of paper per document, and will not print
+double two-sided.
+
+You can as well print from:
+
+https://printer1.cloyne.net/hp/device/Print/Index
+
+And remember, always print *two-sided to save paper*! Or even multiple
+pages on one page. You configure that on your computer when you are
+printing.
 
 When you are printing and you are selecting trays manually, don't use
 Tray 1. Tray 1 is the one where you have to manually feed the paper.
@@ -229,12 +269,9 @@ more importantly: if you open Tray 1, remember to close it. If it is
 open, it will require paper there for anyone else who will want to
 print, and nobody else will be able to print.
 
-The printer is sometimes paused. I do not know who is pressing "pause",
-but if you pause the printer, nobody else can print. There will be a
-small message on the printer that it is paused and you unpause it by
-pressing a small circular arrow button on the top left on the screen.
-So: don't pause the printer.
-
-Please remember: always print two-sided (or even multiple pages on
-one side). You configure that on your computer when you are printing.
+The printer is sometimes paused. Do not do that. If you pause the
+printer, nobody else can print. There will be a small message on
+the printer that it is paused and you unpause it by pressing a
+small circular arrow button on the top left on the screen.
+So: do not pause the printer.
 ```
