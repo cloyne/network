@@ -127,6 +127,36 @@ e-mail address with which you are subscribed to one which will last
 http://cloyne.org/lists/
 ```
 
+What is hackerspace:
+
+```
+What hackerspace is. In short, it is a space where you can work on your
+projects, be creative. Hacking here means in some way taking things
+apart, learning how they work, building things from other stuff, often
+stuff which had originally some other purpose. And it does not have to
+be at all related to computer science, you can hack law, philosophy,
+clothes, privilege.
+
+So, no, hackers do *not* look like that:
+
+http://www.sadanduseless.com/2011/12/stock-photo-hackers/
+
+I think you should all see this great talk by Mitch about what
+hackerspaces are above:
+
+https://www.youtube.com/watch?v=WkiX7R1-kaY
+
+Mitch was also at Cloyne, having a soldering workshop:
+
+http://cloyne.org/events/soldering-workshop/
+
+Look at us:
+
+http://cloyne.org/2014/09/report-soldering-with-mitch-altman/
+
+So, space is for you and your creativity!
+```
+
 Instructions
 ============
 
