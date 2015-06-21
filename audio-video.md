@@ -77,7 +77,7 @@ Dining Hall:
       
     Speakers AL:
       * 06
-      * 07
+      * 02
       
     Speakers BL:
       * 04
@@ -85,7 +85,7 @@ Dining Hall:
       
     Speakers BR:
       * 00 
-      * 02
+      * 07
 
 Family room:
 
