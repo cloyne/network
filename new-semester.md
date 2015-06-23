@@ -51,6 +51,8 @@ end of the page.
 * Add to "List inclusion" the new `clones.XXX` mailing list inclusion. For example, `clones.2015s`.
 Click "Update" at the end of the page.
 
+`from-central` mailing list is automatically updated based on the subscribers from `announce` mailing list.
+
 Wordpress
 ---------
 
@@ -76,7 +78,7 @@ Welcome to Cloyne from your network manager. I configured our mailing
 lists for the new period. For those who are new to Cloyne, here are few
 instructions on how to navigate the digital Cloynosphere.
 
-We have two main mailing lists to which you are all subscribed initially:
+We have three main mailing lists to which you are all subscribed initially:
 
 announce@cloyne.org - to which managers will be sending important
 information to all of us, any discussion direct to:
@@ -87,6 +89,9 @@ that the whole house is subscribed to this mailing list (if needed,
 feel free to request a dedicated mailing list for your project, group,
 team, interests, etc., so that members can subscribe to those they are
 interested in)
+
+from-central@cloyne.org - similar to announce, just that for information
+from the central level we are forwarding to the house
 
 If you want to change the e-mail address you are subscribed to mailing
 lists with, talk to Graham.
