@@ -84,6 +84,12 @@ Running Ubuntu Server Linux distribution as a host for Docker images. It contain
     Internal IP: 10.20.32.91
     MAC:         00:80:92:CF:09:B1
 
+### office printer (Canon MX870) ###
+
+    Internal IP: 10.20.32.92
+    Location:    Office
+    MAC:         00:1E:8F:98:3B:1E
+
 ## APs
 
  * [10.20.32.40](http://10.20.32.40) - FamilyRoom, 04:18:d6:20:60:44, Ubiquiti UniFi AP Pro, channel 6, 140
