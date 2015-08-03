@@ -310,3 +310,19 @@ the printer that it is paused and you unpause it by pressing a
 small circular arrow button on the top left on the screen.
 So: do not pause the printer.
 ```
+
+`Scanning and printing` template in Chinese:
+
+```
+打印的方法
+
+  打印是5分钱／一页纸。请将费用放入打印机旁边的[karma box］中。除了拿usb到打印机打印之外，你还可以通过wifi连接打印机。如果你在设置中找不到 [Library] HP LaserJet 500 MFP M525，你可以设置加入这个打印机：
+- name: [Library] HP LaserJet 500 MFP M525
+- type: HP LaserJet 500 MFP M525
+- IP Address: 10.20.32.90
+- address: printer1.cloyne.net <http://printer1.cloyne.net/>
+
+  请记得双面打印，节约用纸：）还有为了能让大家都能打印，不要暂停打印机。
+
+  同样的机器还可以扫描，你可以将扫描完成的文件发到自己的邮箱。
+```
