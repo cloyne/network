@@ -110,8 +110,8 @@ If you prefer Facebook, we also have a Facebook group:
 
 https://www.facebook.com/groups/1479825148929634/
 
-If anyone is interested in helping doing computer, network, and similar
-stuff, tell me and let's hack together. :-)
+If anyone is interested in helping doing computer, network, programming,
+and similar stuff for workshift, tell me and let's hack together. :-)
 ```
 
 The `clones.XXX@cloyne.org` e-mail template:
