@@ -31,17 +31,22 @@ It is a [Mikrotik RouterBoard 450G](http://routerboard.com/RB450G). See `router`
 
 ### server1 ###
 
-    External IP: 50.0.115.227
+    External IP: 50.0.115.227 (eth0)
     Hostname:    server1.cloyne.net
+    Login:       username root
 
 Running Debian Linux distribution as a host for Docker images. Services:
  * Secondary DNS server
 
+Partitions:
+ * root: `/dev/disk/by-uuid/5d604660-e02f-41e8-8f39-877a38f32f67`
+
 ### server2 ###
 
-    External IP: 50.0.115.228
+    External IP: 50.0.115.228 (eth0)
     Hostname:    server2.cloyne.net
-    Internal IP: 10.20.32.10
+    Internal IP: 10.20.32.10 (eth1)
+    Login:       username root
 
 Running Debian Linux distribution as a host for Docker images. Services:
  * Primary DNS server
@@ -53,14 +58,115 @@ Running Debian Linux distribution as a host for Docker images. Services:
  * [phpPgAdmin](http://cloyne.net/phppgadmin/)
  * [Cloyne.org](http://cloyne.org) blog (Wordpress)
 
+Partitions:
+ * root: `/dev/sdg1`
+ * `/srv`: `/dev/md1`
+ * `/srv/var`: `/dev/md0`
+
+```
+$ cat /proc/mdstat
+
+md0 : active raid1 sde1[1] sdf1[0]
+      488253248 blocks super 1.2 [2/2] [UU]
+md1 : active raid10 sdb1[3] sdd1[4] sdc1[2] sda1[0]
+      2930011136 blocks super 1.2 512K chunks 2 near-copies [4/4] [UUUU]
+```
+
 ### server3 ###
 
-    External IP: 50.0.115.229
+    External IP: 50.0.115.229 (p5p1)
     Hostname:    server3.cloyne.net
-    Internal IP: 10.20.32.11
+    Internal IP: 10.20.32.11 (p6p1)
+    Login:       username cloyne + sudo su for root 
 
 Running Ubuntu Server Linux distribution as a host for Docker images. It contains 8 x 3 TB hard drives, 8 x 750 GB drives, configured in pairs into RAID-1, combined into a 15 TB LVM volume. Services:
  * ownCloud
+
+Partitions:
+ * root: `/dev/sda1`
+ * `/srv`: `/dev/mapper/vg0-srv`
+
+```
+$ cat /proc/mdstat
+
+md3 : active raid1 sdm1[1] sdi1[0]
+      2929542976 blocks super 1.2 [2/2] [UU]
+md1 : active raid1 sdd1[0] sde1[1]
+      2929542976 blocks super 1.2 [2/2] [UU]
+md7 : active raid1 sdq1[1] sdp1[0]
+      732277568 blocks super 1.2 [2/2] [UU]
+md0 : active raid1 sdc1[1] sdb1[0]
+      2929542976 blocks super 1.2 [2/2] [UU]
+md2 : active raid1 sdh1[1] sdf1[0]
+      2929542976 blocks super 1.2 [2/2] [UU]
+md4 : active raid1 sdj1[1] sdg1[0]
+      732277568 blocks super 1.2 [2/2] [UU]
+md6 : active raid1 sdn1[0] sdo1[1]
+      732277568 blocks super 1.2 [2/2] [UU]
+md5 : active raid1 sdk1[0] sdl1[1]
+      732277568 blocks super 1.2 [2/2] [UU]
+```
+
+```
+$ lvdisplay --maps
+
+  LV Path                /dev/vg0/srv
+  LV Name                srv
+  VG Name                vg0
+  LV UUID                UvYIg3-QMId-m19Y-BeQ5-DtQV-QSPK-znMAFt
+  LV Write Access        read/write
+  LV Creation host, time server3, 2015-05-16 23:15:51 -0700
+  LV Status              available
+  # open                 1
+  LV Size                13.64 TiB
+  Current LE             3575992
+  Segments               8
+  Allocation             inherit
+  Read ahead sectors     auto
+  - currently set to     256
+  Block device           252:0
+   
+  --- Segments ---
+  Logical extent 0 to 715219:
+    Type		linear
+    Physical volume	/dev/md0
+    Physical extents	0 to 715219
+   
+  Logical extent 715220 to 1430439:
+    Type		linear
+    Physical volume	/dev/md1
+    Physical extents	0 to 715219
+   
+  Logical extent 1430440 to 2145659:
+    Type		linear
+    Physical volume	/dev/md2
+    Physical extents	0 to 715219
+   
+  Logical extent 2145660 to 2860879:
+    Type		linear
+    Physical volume	/dev/md3
+    Physical extents	0 to 715219
+   
+  Logical extent 2860880 to 3039657:
+    Type		linear
+    Physical volume	/dev/md4
+    Physical extents	0 to 178777
+   
+  Logical extent 3039658 to 3218435:
+    Type		linear
+    Physical volume	/dev/md5
+    Physical extents	0 to 178777
+   
+  Logical extent 3218436 to 3397213:
+    Type		linear
+    Physical volume	/dev/md6
+    Physical extents	0 to 178777
+   
+  Logical extent 3397214 to 3575991:
+    Type		linear
+    Physical volume	/dev/md7
+    Physical extents	0 to 178777
+```
 
 ## Computers
 
