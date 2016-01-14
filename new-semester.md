@@ -60,7 +60,7 @@ Wordpress
 * All users in the CSV file will be created with `author` permission which allows them to post blog posts, events,
 upload media content, but does not allow them to change content of others.
 * Open [http://cloyne.org/wp-admin/users.php?page=import-users-from-csv](http://cloyne.org/wp-admin/users.php?page=import-users-from-csv).
-* Select the CSV file, check "Send to new users" and "Show password nag on new users signon ". Click "Import".
+* Select the CSV file, check "Send to new users" and "Show password nag on new users signon". Click "Import".
 
 It might happen that the site time-outs after the import. This is normal. New users will be imported and e-mail
 notification will be send to them inviting them to set the password.
