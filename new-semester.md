@@ -42,6 +42,7 @@ and then click on "Delete selected email addresses".
 list. This copies the configuration, but not subscribers.
 * Open [http://cloyne.org/lists/add_request/clones](http://cloyne.org/lists/add_request/clones).
 * Paste in all addresses, check "Quiet", and click on "Add subscribers".
+* Add `cloyne.cloaca@gmail.com` e-mail address to the mailng list, but only for sending. After adding it, find it again, [open its details](http://cloyne.org/lists/editsubscriber/clones/cloyne.cloaca@gmail.com/review), and set `Receiving` to `no mail`.
 * Open the "List definition" admin page of the new `clones.XXX@cloyne.org` mailing list, for example for
 `clones.2015s@cloyne.org` open `http://cloyne.org/lists/edit_list_request/clones.2015s/description`.
 * Change subject "Cloyne discussion mailing list" (which is subject for `clones@cloyne.org` mailing list) to
