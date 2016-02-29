@@ -182,7 +182,7 @@ $ lvdisplay --maps
 
     Internal IP: 10.20.32.90
     Hostname:    printer1.cloyne.net
-    Location:    Library
+    Location:    Pool/Mail room
     MAC:         28:80:23:11:83:3C
 
 ### label printer (Brother QL-710W) ###
@@ -190,10 +190,10 @@ $ lvdisplay --maps
     Internal IP: 10.20.32.91
     MAC:         00:80:92:CF:09:B1
 
-### office printer (Canon MX870) ###
+### Makerspace printer (Canon MX870) ###
 
     Internal IP: 10.20.32.92
-    Location:    Office
+    Location:    W0B (Makerspace)
     MAC:         00:1E:8F:98:3B:1E
 
 ## APs
