@@ -238,3 +238,4 @@ We use Dlink Smart Console Utility to manage IP allocations of switches. Switche
 
  * [10.20.35.210](http://10.20.35.210) – Cloyne-Kingman, 24:A4:3C:9C:F6:AD
  * [10.20.35.211](http://10.20.35.211) – Cloyne-Euclid, 04:18:D6:A4:84:77
+ * [10.20.35.240](http://10.20.35.240) – Cloyne-Euclid KORUZA, B8:27:EB:7A:6A:BB
