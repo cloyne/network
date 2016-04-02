@@ -210,6 +210,7 @@ $ lvdisplay --maps
 ### Makerspace printer (Canon MX870) ###
 
     Internal IP: 10.20.32.92
+    Hostname:    printer2.cloyne.net
     Location:    W0B (Makerspace)
     MAC:         00:1E:8F:98:3B:1E
 
