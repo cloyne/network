@@ -1,37 +1,54 @@
 # Cloyne network
 
-## Fiber Internet
+## Internet uplink
 
-Through [Sonic.net](http://sonic.net/), fiber itself is operated by AT&T.
+Through [Hurricane Electric](https://he.net/).
 
-    50.0.115.224/28
-    Network:              50.0.115.224 (838890464)
-    Netmask:              255.255.255.240
-    Gateway:              50.0.115.225
-    Broadcast:            50.0.115.239 (838890479)
-    Primary DNS:          208.201.224.11
-    Second. DNS:          208.201.224.33
-    Time:                 64.142.1.20
-    Bandwidth:            50/50 Mbit/s
-    Usable address range: 50.0.115.226 - 50.0.115.238 (13 addresses)
+    64.62.133.40/29 
+    Network:              64.62.133.40
+    Netmask:              255.255.255.248
+    Broadcast:            64.62.133.47
+    DNS:                  216.218.196.2
+    Usable address range: 64.62.133.41 - 64.62.133.46 (6 addresses)
 
-Sonic.net network operations phone number is +1-877-706-662. Equipment directly connected to the fiber has to have configured fixed 100 Mbit/s full-duplex configuration and autonegotiation must be disabled.
+    2001:470:104::/48
+    Network:              2001:470:104::
+    DNS:                  2001:470:0:473::473
+
+    64.62.214.116/30 (point to point connection)
+    HE:                   64.62.214.117
+    Cloyne:               64.62.214.118
+
+    2001:470:1:1c5::/126 (point to point connection)
+    HE:                   2001:470:1:1c5::1
+    Cloyne:               2001:470:1:1c5::2
+
+Bandwidth limit is 100 Mbit/s.
+
+## HE router
+
+    External IP:       64.62.133.41
+    Netmask:           255.255.255.248 (/29)
+    Hostname:          he.cloyne.net
+    Other IP:          64.62.214.118
+
+It is a [Mikrotik RouterBoard 2011UiAS-RM](http://routerboard.com/RB2011UiAS-RM).
 
 ## Main router
 
-    External IP:       50.0.115.226
+    External IP:       64.62.133.42
     Internal IP:       10.20.32.1
-    Netmask:           255.255.252.0 (/22)
+    Netmask:           255.255.255.248 (/29)
     Hostname:          router.cloyne.net
     DHCP client range: 10.20.32.100 - 10.20.35.190 (859 addresses)
 
-It is a [Mikrotik RouterBoard 450G](http://routerboard.com/RB450G). See `router` directory for more information.
+It is a [Mikrotik RouterBoard 450G](http://routerboard.com/RB450G).
 
 ## Servers
 
 ### server1 ###
 
-    External IP: 50.0.115.227 (eth0)
+    External IP: 64.62.133.43 (eth0)
     Hostname:    server1.cloyne.net
     Login:       username root
 
@@ -43,7 +60,7 @@ Partitions:
 
 ### server2 ###
 
-    External IP: 50.0.115.228 (eth0)
+    External IP: 64.62.133.44 (eth0)
     Hostname:    server2.cloyne.net
     Internal IP: 10.20.32.10 (eth1)
     Login:       username root
@@ -74,7 +91,7 @@ md1 : active raid10 sdb1[3] sdd1[4] sdc1[2] sda1[0]
 
 ### server3 ###
 
-    External IP: 50.0.115.229 (p5p1)
+    External IP: 64.62.133.45 (p5p1)
     Hostname:    server3.cloyne.net
     Internal IP: 10.20.32.11 (p6p1)
     Login:       username cloyne + sudo su for root 
