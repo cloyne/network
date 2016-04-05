@@ -97,6 +97,11 @@ from the central level we are forwarding to the house
 If you want to change the e-mail address you are subscribed to mailing
 lists with, talk to facilities manager.
 
+We also have a collective "Cloyne Cloaca" Gmail e-mail account which is
+mainly used to send announcements from kitchen to the mailing list.
+Because it can be used by anyone, anonymously, it can also be misused.
+Do not trust everything coming from it.
+
 We have a website (http://cloyne.org/). And we have also a calendar
 of events on the website. All of you should receive an e-mail
 with your username and temporary password for the website. With it
@@ -110,6 +115,11 @@ photos and videos to our media library. The site is yours. Enjoy it.
 If you prefer Facebook, we also have a Facebook group:
 
 https://www.facebook.com/groups/1479825148929634/
+
+We also have a file server where your fello can share files with
+fellow members:
+
+http://files.cloyne.net
 
 If anyone is interested in helping doing computer, network, programming,
 and similar stuff for workshift, tell me and let's hack together. :-)
@@ -285,7 +295,7 @@ Alternativelly, you can plug your USB flash drive from the front.
 
 You can e-mail the document you want to print to:
 
-elvi834egmi34@hpeprint.com
+printer1@cloyne.org
 
 But this will waste one sheet of paper per document, and will not print
 double two-sided.
