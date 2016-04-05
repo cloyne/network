@@ -138,9 +138,14 @@ all clones.*@cloyne.org mailing lists, so all past members of Cloyne.
 
 Feel free to use them. Feel free to unsubscribe. Feel free to change the
 e-mail address with which you are subscribed to one which will last
-(not @berkeley address).
+(not @berkeley address). You can do that by visiting:
 
-http://cloyne.org/lists/
+http://cloyne.org/lists/firstpasswd/
+
+And after you login, visit your account preferences and change your
+e-mail address:
+
+http://cloyne.org/lists/pref
 ```
 
 What is hackerspace:
