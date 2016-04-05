@@ -95,7 +95,7 @@ from-central@cloyne.org - similar to announce, just that for information
 from the central level we are forwarding to the house
 
 If you want to change the e-mail address you are subscribed to mailing
-lists with, talk to Graham.
+lists with, talk to facilities manager.
 
 We have a website (http://cloyne.org/). And we have also a calendar
 of events on the website. All of you should receive an e-mail
