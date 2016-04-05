@@ -95,7 +95,14 @@ from-central@cloyne.org - similar to announce, just that for information
 from the central level we are forwarding to the house
 
 If you want to change the e-mail address you are subscribed to mailing
-lists with, talk to facilities manager.
+lists with, you can do that by visiting:
+
+http://cloyne.org/lists/firstpasswd/
+
+And after you login, visit your account preferences and change your
+e-mail address:
+
+http://cloyne.org/lists/pref
 
 We also have a collective "Cloyne Cloaca" Gmail e-mail account which is
 mainly used to send announcements from kitchen to the mailing list.
