@@ -91,13 +91,14 @@ md1 : active raid10 sdb1[3] sdd1[4] sdc1[2] sda1[0]
 
 ### server3 ###
 
-    External IP: 64.62.133.45 (p5p1)
+    Internal IP: 10.20.32.11 (p5p1)
+    Internal IP: 172.16.0.103 (p6p1)
     Hostname:    server3.cloyne.net
-    Internal IP: 10.20.32.11 (p6p1)
     Login:       username cloyne + sudo su for root 
 
 Running Ubuntu Server Linux distribution as a host for Docker images. It contains 8 x 3 TB hard drives, 8 x 750 GB drives, configured in pairs into RAID-1, combined into a 15 TB LVM volume. Services:
  * ownCloud
+ * nodewatcher
 
 Partitions:
  * root: `/dev/sda1`
