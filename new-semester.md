@@ -124,7 +124,7 @@ If you prefer Facebook, we also have a Facebook group:
 
 https://www.facebook.com/groups/1479825148929634/
 
-We also have a file server where your fello can share files with
+We also have a file server where you can share files with your
 fellow members:
 
 http://files.cloyne.net
