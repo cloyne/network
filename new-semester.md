@@ -7,7 +7,7 @@ Facebook
 * Create a Facebook group, name `Cloyne SEASON 'XX`, where `SEASON` is one of `Fall`, `Spring`, `Summer`, and
 `XX` is year, like `Cloyne Summer '15`.
 * Choose closed group within Berkeley.
-* Share it on previous semester Facebook group so that people can join. Invite those you know their Facbook account.
+* Share it on previous semester Facebook group so that people can join with a pinned message on top of the group. Invite those you know their Facbook account.
 * Allow joining only to members who live that semester in Cloyne.
 
 Examples of past Facebook groups: [Cloyne Summer '15](https://www.facebook.com/groups/1479825148929634/),
