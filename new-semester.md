@@ -9,6 +9,7 @@ Facebook
 * Choose closed group within Berkeley.
 * Share it on previous semester Facebook group so that people can join with a pinned message on top of the group. Invite those you know their Facbook account.
 * Allow joining only to members who live that semester in Cloyne.
+* Ask for the new cover photo for the new group.
 
 Examples of past Facebook groups: [Cloyne Summer '15](https://www.facebook.com/groups/1479825148929634/),
 [Cloyne Spring '15](https://www.facebook.com/groups/765891660172376/),
