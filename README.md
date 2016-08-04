@@ -217,7 +217,7 @@ $ lvdisplay --maps
 
 ## APs
 
- * [10.20.32.40](http://10.20.32.40) - FamilyRoom, 04:18:d6:20:60:44, Ubiquiti UniFi AP Pro, channel 6, 140
+ * [10.20.32.40](http://10.20.32.40) - FamilyRoom, 04:18:d6:20:60:44, Ubiquiti UniFi AP Pro, channel 6, 48
  * [10.20.32.41](http://10.20.32.41) - W3J, e8:94:f6:68:87:51, TP-LINK TL-WR1043ND v2, channel 11
  * [10.20.32.42](http://10.20.32.42) - E2J, 04:18:d6:20:58:df, Ubiquiti UniFi AP Pro, channel 6, 132
  * [10.20.32.43](http://10.20.32.43) - W2C, 04:18:d6:20:5c:fe, Ubiquiti UniFi AP Pro, channel 6, 124
