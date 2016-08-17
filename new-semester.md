@@ -14,6 +14,8 @@ Examples of past Facebook groups: [Cloyne Summer '15](https://www.facebook.com/g
 [Cloyne Spring '15](https://www.facebook.com/groups/765891660172376/),
 [Cloyne Fall '14](https://www.facebook.com/groups/628905887204288/)
 
+We also have an [alumni Facebook group](https://www.facebook.com/groups/545601288975216/).
+
 Mailing lists
 -------------
 
@@ -153,6 +155,10 @@ And after you login, visit your account preferences and change your
 e-mail address:
 
 http://cloyne.org/lists/pref
+
+We also have an alumni Facebook group. Feel free to join it:
+
+https://www.facebook.com/groups/545601288975216/
 ```
 
 What is hackerspace:
