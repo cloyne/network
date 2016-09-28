@@ -78,16 +78,19 @@ Running Debian Linux distribution as a host for Docker images. Services:
 Partitions:
  * root: `/dev/sdg1`
  * `/srv`: `/dev/md1`
- * `/srv/var`: `/dev/md0`
+ * `/srv/mnt`: `/dev/md0` (used for internal backup)
 
 ```
 $ cat /proc/mdstat
 
 md0 : active raid1 sde1[1] sdf1[0]
       488253248 blocks super 1.2 [2/2] [UU]
-md1 : active raid10 sdb1[3] sdd1[4] sdc1[2] sda1[0]
-      2930011136 blocks super 1.2 512K chunks 2 near-copies [4/4] [UUUU]
+md1 : active raid1 sda1[2] sdb1[1] sdc1[0]
+      1465006080 blocks super 1.2 [3/3] [UUU]
+      bitmap: 11/11 pages [44KB], 65536KB chunk
 ```
+
+`md1` is a RAID-1 with three hard drives.
 
 ### server3 ###
 
