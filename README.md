@@ -131,6 +131,7 @@ md5 : active raid1 sdk1[0] sdl1[1]
 ```
 $ lvdisplay --maps
 
+--- Logical volume ---
   LV Path                /dev/vg0/srv
   LV Name                srv
   VG Name                vg0
@@ -139,9 +140,9 @@ $ lvdisplay --maps
   LV Creation host, time server3, 2015-05-16 23:15:51 -0700
   LV Status              available
   # open                 1
-  LV Size                13.64 TiB
-  Current LE             3575992
-  Segments               8
+  LV Size                12.86 TiB
+  Current LE             3371192
+  Segments               7
   Allocation             inherit
   Read ahead sectors     auto
   - currently set to     256
@@ -178,16 +179,28 @@ $ lvdisplay --maps
     Physical volume	/dev/md5
     Physical extents	0 to 178777
    
-  Logical extent 3218436 to 3397213:
+  Logical extent 3218436 to 3371191:
     Type		linear
     Physical volume	/dev/md6
-    Physical extents	0 to 178777
-   
-  Logical extent 3397214 to 3575991:
-    Type		linear
-    Physical volume	/dev/md7
-    Physical extents	0 to 178777
+    Physical extents	0 to 152755
 ```
+
+```
+$ pvs -o+pv_used
+
+  PV         VG   Fmt  Attr PSize   PFree   Used   
+  /dev/md0   vg0  lvm2 a--    2.73t      0    2.73t
+  /dev/md1   vg0  lvm2 a--    2.73t      0    2.73t
+  /dev/md2   vg0  lvm2 a--    2.73t      0    2.73t
+  /dev/md3   vg0  lvm2 a--    2.73t      0    2.73t
+  /dev/md4   vg0  lvm2 a--  698.35g      0  698.35g
+  /dev/md5   vg0  lvm2 a--  698.35g      0  698.35g
+  /dev/md6   vg0  lvm2 a--  698.35g 101.65g 596.70g
+  /dev/md7   vg0  lvm2 a--  698.35g 698.35g      0
+```
+
+(`/dev/md7` is currently not part of `srv` because it is a left-over from debugging, when we were planing to remove two
+small hard-drives. It is left like this with a plan to be replaced with a new RAID device with more space.)
 
 ## Computers
 
