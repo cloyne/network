@@ -247,11 +247,15 @@ small hard-drives. It is left like this with a plan to be replaced with a new RA
  * [10.20.32.51](http://10.20.32.51) - C2C, 04:18:d6:20:5f:e6, Ubiquiti UniFi AP Pro, channel 1, 56
  * [10.20.32.52](http://10.20.32.52) - W1E, 90:f6:52:ea:05:ec, TP-LINK TL-WR1043ND, channel 11
  * [10.20.32.53](http://10.20.32.53) - C3K, 90:F6:52:2A:08:54, TP-LINK TL-WR1043ND, channel 6
- * KINGMAN APs
- * [10.20.35.220] - Study Room,      80:2a:a8:13:4b:ed, Ubiquiti UniFi AP-AC-Pro, Channels 11 + 44
- * [10.20.35.221] - Network Closet,  80:2a:a8:13:4a:19, Ubiquiti UniFi AP-AC-Pro, Channels 1  + 149
- * [10.20.35.222] - Dining Room,     80:2a:a8:13:4b:bb, Ubiquiti UniFi AP-AC-Pro, Channels 1  + 36
- * [10.20.35.223] - 2nd Floor North, 80:2a:a8:13:4b:c5, Ubiquiti UniFi AP-AC-Pro, Channels 6  + 161
+
+### Kingman APs
+
+Temporary configured to this IP range until Kingman gets its own router.
+
+ * 10.20.35.220 - Study Room,      80:2a:a8:13:4b:ed, Ubiquiti UniFi AP-AC-Pro, channel 11, 44
+ * 10.20.35.221 - Network Closet,  80:2a:a8:13:4a:19, Ubiquiti UniFi AP-AC-Pro, channel 1, 149
+ * 10.20.35.222 - Dining Room,     80:2a:a8:13:4b:bb, Ubiquiti UniFi AP-AC-Pro, channel 1, 36
+ * 10.20.35.223 - 2nd Floor North, 80:2a:a8:13:4b:c5, Ubiquiti UniFi AP-AC-Pro, channel 6, 161
 
 Old (not in used by stored in storage, we keep this information to know how to connect to a device if we will want to reuse it):
 
@@ -278,6 +282,6 @@ We use Dlink Smart Console Utility to manage IP allocations of switches. Switche
 
  * [10.20.35.210](http://10.20.35.210) – Cloyne-Kingman, 24:A4:3C:9C:F6:AD
  * [10.20.35.211](http://10.20.35.211) – Cloyne-Euclid, 04:18:D6:A4:84:77
- * [10.20.35.212](http://10.20.35.212) – Kingman-Cloyne, 24:A4:3C:BE:4E:A0
+ * [10.20.35.212](http://10.20.35.212) – Kingman-Cloyne, 24:A4:3C:BE:4E:A0 (temporary moved from 10.20.99.210 until Kingman gets its own router)
  * [10.20.35.240](http://10.20.35.240) – Cloyne-Euclid KORUZA, B8:27:EB:7A:6A:BB
  * [10.20.35.241](http://10.20.35.241) – Euclid-Cloyne KORUZA, B8:27:EB:23:21:E7
