@@ -248,7 +248,7 @@ small hard-drives. It is left like this with a plan to be replaced with a new RA
  * [10.20.32.52](http://10.20.32.52) - W1E, 90:f6:52:ea:05:ec, TP-LINK TL-WR1043ND, channel 11
  * [10.20.32.53](http://10.20.32.53) - C3K, 90:F6:52:2A:08:54, TP-LINK TL-WR1043ND, channel 6
 
-### Kingman APs
+### Kingman
 
 Temporary configured to this IP range until Kingman gets its own router.
 
@@ -256,6 +256,8 @@ Temporary configured to this IP range until Kingman gets its own router.
  * 10.20.35.221 - Network Closet,  80:2a:a8:13:4a:19, Ubiquiti UniFi AP-AC-Pro, channel 1, 149
  * 10.20.35.222 - Dining Room,     80:2a:a8:13:4b:bb, Ubiquiti UniFi AP-AC-Pro, channel 1, 36
  * 10.20.35.223 - 2nd Floor North, 80:2a:a8:13:4b:c5, Ubiquiti UniFi AP-AC-Pro, channel 6, 161
+
+### Other
 
 Old (not in used by stored in storage, we keep this information to know how to connect to a device if we will want to reuse it):
 
