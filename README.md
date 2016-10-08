@@ -212,12 +212,12 @@ small hard-drives. It is left like this with a plan to be replaced with a new RA
 
 ## Printers
 
-### printer1 (HP LaserJet 500 MFP M525) ###
+### printer1 (Brother MFC-9330CDW) ###
 
     Internal IP: 10.20.32.90
     Hostname:    printer1.cloyne.net
     Location:    Pool/Mail room
-    MAC:         28:80:23:11:83:3C
+    MAC:         30:05:5C:A8:CD:68
 
 ### label printer (Brother QL-710W) ###
 
