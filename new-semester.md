@@ -196,7 +196,8 @@ Instructions
 
 Later on you should send few e-mails with various instructions.
 
-`Adding events to your Google Calendar` template:
+`Adding events to your Google Calendar` template
+------------------------------------------------
 
 ```
 If you want, you can add events from cloyne.org website to your Google
@@ -211,7 +212,8 @@ Events Using Google Calendar":
 http://wp-events-plugin.com/documentation/event-ical-feeds/
 ```
 
-`How to use Gmail for mailing lists` template:
+`How to use Gmail for mailing lists` template
+---------------------------------------------
 
 ```
 Do you feel overwhelmed with all the e-mails coming your way over our
@@ -249,7 +251,8 @@ inbox and is automatically archived
 If you have any questions about any of this, feel free to ask.
 ```
 
-`Everyone can post to our blog and create events` template:
+`Everyone can post to our blog and create events` template
+----------------------------------------------------------
 
 ```
 Short reminder that if anyone would like to post to a blog at
@@ -280,7 +283,8 @@ that something is happening, and you also clearly show that the space
 will be in use.
 ```
 
-`Scanning and printing` template:
+`Scanning and printing` template
+--------------------------------
 
 ```
 We have a house scanner and printer. Printing operates on karma box
