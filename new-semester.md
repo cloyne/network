@@ -287,8 +287,7 @@ We have a house scanner and printer. Printing operates on karma box
 principle, 5 cents per page. When printing, please throw that amount
 into the karma box next to the printer.
 
-Scanning is easy, you can scan it to the USB flash drive, or send
-the scanned document to your e-mail address.
+Scanning is easy, you can scan it to the USB flash drive.
 
 For printing, you have multiple ways you can print. The easiest is to
 configure it on your computer as a network printer.
@@ -296,62 +295,16 @@ configure it on your computer as a network printer.
 Open the printer configuration on your computer and it will probably
 find this printer; otherwise, you can add it with the following
 information:
-- name: [Library] HP LaserJet 500 MFP M525
-- type: HP LaserJet 500 MFP M525
+- name: [Pool Room] Brother MFC-9340CDW
+- type: Brother MFC-9340CDW
 - IP Address: 10.20.32.90
 - address: printer1.cloyne.net
 
-When prompted, do not select "share printer".
-
-To install for Windows 7, you should search on Goggle for "HP Universal
-Print Driver for Windows PCL6" and install it for your system (first
-hit is the right one), and then you will get that screen you have on
-instructions. Windows 8 people don’t have to install anything, it should
-just work.
+If prompted, do not select "share printer".
 
 Alternativelly, you can plug your USB flash drive from the front.
-
-You can e-mail the document you want to print to:
-
-printer1@cloyne.org
-
-But this will waste one sheet of paper per document, and will not print
-double two-sided.
-
-You can as well print from:
-
-https://printer1.cloyne.net/hp/device/Print/Index
 
 And remember, always print *two-sided to save paper*! Or even multiple
 pages on one page. You configure that on your computer when you are
 printing.
-
-When you are printing and you are selecting trays manually, don't use
-Tray 1. Tray 1 is the one where you have to manually feed the paper.
-So it will not print until you give the printer the paper. But even
-more importantly: if you open Tray 1, remember to close it. If it is
-open, it will require paper there for anyone else who will want to
-print, and nobody else will be able to print.
-
-The printer is sometimes paused. Do not do that. If you pause the
-printer, nobody else can print. There will be a small message on
-the printer that it is paused and you unpause it by pressing a
-small circular arrow button on the top left on the screen.
-So: do not pause the printer.
-```
-
-`Scanning and printing` template in Chinese:
-
-```
-打印的方法
-
-  打印是5分钱／一页纸。请将费用放入打印机旁边的[karma box］中。除了拿usb到打印机打印之外，你还可以通过wifi连接打印机。如果你在设置中找不到 [Library] HP LaserJet 500 MFP M525，你可以设置加入这个打印机：
-- name: [Library] HP LaserJet 500 MFP M525
-- type: HP LaserJet 500 MFP M525
-- IP Address: 10.20.32.90
-- address: printer1.cloyne.net <http://printer1.cloyne.net/>
-
-  请记得双面打印，节约用纸：）还有为了能让大家都能打印，不要暂停打印机。
-
-  同样的机器还可以扫描，你可以将扫描完成的文件发到自己的邮箱。
 ```
