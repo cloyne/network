@@ -99,9 +99,11 @@ md1 : active raid1 sda1[2] sdb1[1] sdc1[0]
     Hostname:    server3.cloyne.net
     Login:       username cloyne + sudo su for root 
 
-Running Ubuntu Server Linux distribution as a host for Docker images. It contains 8 x 3 TB hard drives, 8 x 750 GB drives, configured in pairs into RAID-1, combined into a 15 TB LVM volume. Services:
+Running Ubuntu Server Linux distribution as a host for Docker images. It contains 8 x 3 TB hard drives, 6 x 750 GB drives, configured in pairs into RAID-1, combined into a 13 TB LVM volume. Services:
  * ownCloud
  * nodewatcher
+
+One hard drive bay (8) is currently empty because of a failed hard drive. Its mirror (`/dev/sdg1`, bay 5, 750 GB) can be used as a replacement for some other drive when needed.
 
 Partitions:
  * root: `/dev/sda1`
@@ -109,29 +111,25 @@ Partitions:
 
 ```
 $ cat /proc/mdstat
-
-md3 : active raid1 sdm1[1] sdi1[0]
-      2929542976 blocks super 1.2 [2/2] [UU]
-md1 : active raid1 sdd1[0] sde1[1]
-      2929542976 blocks super 1.2 [2/2] [UU]
-md7 : active raid1 sdq1[1] sdp1[0]
+md5 : active raid1 sdk1[3] sdj1[2]
       732277568 blocks super 1.2 [2/2] [UU]
-md0 : active raid1 sdc1[1] sdb1[0]
+md7 : active raid1 sdp1[1] sdo1[0]
+      732277568 blocks super 1.2 [2/2] [UU
+md6 : active raid1 sdn1[1] sdm1[0]
+      732277568 blocks super 1.2 [2/2] [UU]
+md2 : active raid1 sdh1[1] sdf1[2]
       2929542976 blocks super 1.2 [2/2] [UU]
-md2 : active raid1 sdh1[1] sdf1[0]
+md3 : active raid1 sdl1[1] sdi1[0]
       2929542976 blocks super 1.2 [2/2] [UU]
-md4 : active raid1 sdj1[1] sdg1[0]
-      732277568 blocks super 1.2 [2/2] [UU]
-md6 : active raid1 sdn1[0] sdo1[1]
-      732277568 blocks super 1.2 [2/2] [UU]
-md5 : active raid1 sdk1[0] sdl1[1]
-      732277568 blocks super 1.2 [2/2] [UU]
+md0 : active raid1 sdb1[3] sdc1[2]
+      2929542976 blocks super 1.2 [2/2] [UU]
+md1 : active raid1 sde1[2] sdd1[3]
+      2929542976 blocks super 1.2 [2/2] [UU]
 ```
 
 ```
 $ lvdisplay --maps
-
---- Logical volume ---
+  --- Logical volume ---
   LV Path                /dev/vg0/srv
   LV Name                srv
   VG Name                vg0
@@ -171,7 +169,7 @@ $ lvdisplay --maps
    
   Logical extent 2860880 to 3039657:
     Type		linear
-    Physical volume	/dev/md4
+    Physical volume	/dev/md7
     Physical extents	0 to 178777
    
   Logical extent 3039658 to 3218435:
@@ -187,20 +185,63 @@ $ lvdisplay --maps
 
 ```
 $ pvs -o+pv_used
-
   PV         VG   Fmt  Attr PSize   PFree   Used   
   /dev/md0   vg0  lvm2 a--    2.73t      0    2.73t
   /dev/md1   vg0  lvm2 a--    2.73t      0    2.73t
   /dev/md2   vg0  lvm2 a--    2.73t      0    2.73t
   /dev/md3   vg0  lvm2 a--    2.73t      0    2.73t
-  /dev/md4   vg0  lvm2 a--  698.35g      0  698.35g
   /dev/md5   vg0  lvm2 a--  698.35g      0  698.35g
   /dev/md6   vg0  lvm2 a--  698.35g 101.65g 596.70g
-  /dev/md7   vg0  lvm2 a--  698.35g 698.35g      0
+  /dev/md7   vg0  lvm2 a--  698.35g      0  698.35g
 ```
 
-(`/dev/md7` is currently not part of `srv` because it is a left-over from debugging, when we were planing to remove two
-small hard-drives. It is left like this with a plan to be replaced with a new RAID device with more space.)
+```
+$ ~/files/tw_cli/tw_cli /c2 show
+Unit  UnitType  Status         %RCmpl  %V/I/M  Stripe  Size(GB)  Cache  AVrfy
+------------------------------------------------------------------------------
+u0    SINGLE    VERIFYING      -       75%     -       2793.96   Ri     ON     
+u1    SINGLE    VERIFYING      -       75%     -       2793.96   Ri     ON     
+u2    SINGLE    VERIFYING      -       30%     -       2793.96   Ri     ON     
+u3    SINGLE    VERIFYING      -       0%      -       2793.96   Ri     ON     
+u4    SINGLE    VERIFY-PAUSED  -       0%      -       2793.96   Ri     ON     
+u5    SINGLE    VERIFY-PAUSED  -       0%      -       698.481   Ri     ON     
+u6    SINGLE    VERIFY-PAUSED  -       0%      -       2793.96   Ri     ON     
+u7    SINGLE    VERIFY-PAUSED  -       0%      -       2793.96   Ri     ON     
+u8    SINGLE    VERIFY-PAUSED  -       0%      -       698.481   Ri     ON     
+u9    SINGLE    VERIFY-PAUSED  -       0%      -       698.481   Ri     ON     
+u10   SINGLE    VERIFY-PAUSED  -       0%      -       2793.96   Ri     ON     
+u11   SINGLE    VERIFY-PAUSED  -       0%      -       698.481   Ri     ON     
+u12   SINGLE    VERIFY-PAUSED  -       0%      -       698.481   Ri     ON     
+u13   SINGLE    VERIFY-PAUSED  -       0%      -       698.481   Ri     ON     
+u14   SINGLE    VERIFY-PAUSED  -       0%      -       698.481   Ri     ON     
+
+VPort Status         Unit Size      Type  Phy Encl-Slot    Model
+------------------------------------------------------------------------------
+p0    VERIFYING      u0   2.73 TB   SATA  0   -            WDC WD30EFRX-68EUZN0
+p1    VERIFYING      u1   2.73 TB   SATA  1   -            WDC WD30EFRX-68EUZN0
+p2    VERIFYING      u2   2.73 TB   SATA  2   -            WDC WD30EFRX-68EUZN0
+p3    VERIFYING      u3   2.73 TB   SATA  3   -            WDC WD30EFRX-68EUZN0
+p4    VERIFYING      u4   2.73 TB   SATA  4   -            WDC WD30EFRX-68EUZN0
+p5    VERIFYING      u5   698.63 GB SATA  5   -            ST3750640NS         
+p6    VERIFYING      u6   2.73 TB   SATA  6   -            WDC WD30EFRX-68EUZN0
+p7    VERIFYING      u7   2.73 TB   SATA  7   -            WDC WD30EFRX-68EUZN0
+p9    VERIFYING      u8   698.63 GB SATA  9   -            ST3750640NS         
+p10   VERIFYING      u9   698.63 GB SATA  10  -            ST3750640NS         
+p11   VERIFYING      u10  2.73 TB   SATA  11  -            WDC WD30EFRX-68EUZN0
+p12   VERIFYING      u11  698.63 GB SATA  12  -            ST3750640NS         
+p13   VERIFYING      u12  698.63 GB SATA  13  -            ST3750640NS         
+p14   VERIFYING      u13  698.63 GB SATA  14  -            ST3750640NS         
+p15   VERIFYING      u14  698.63 GB SATA  15  -            ST3750640NS         
+
+Name  OnlineState  BBUReady  Status    Volt     Temp     Hours  LastCapTest
+---------------------------------------------------------------------------
+bbu   On           Yes       OK        OK       OK       0      xx-xxx-xxxx  
+```
+
+`VPort` tells you which hard drive bay a disk is in. `Unit` tells you under which SCSI number it is available in the system.
+Using that you can see under which device filename you can a hard drive. For example, drive in bay 11 is unit 10, so greping `dmesg | grep 'sd 2:0:10:0'` gives you `sd 2:0:10:0: [sdl] 5859352576 512-byte logical blocks: (3.00 TB/2.73 TiB)`, so `/dev/sdl` is the device filename under which the drive is available. **VPort and Unit can get out of sync and order.** You can try to reorder them and get them in sync by moving them around in hardware RAID BIOS, but it takes a lot of time because the interface is bugy and you hve to move them around one by one, repeating many times, until changes stick correctly.
+
+On the other hand, `smartctl` operates on `VPort` numbers. So for the drive in bay 11, you can access its SMART information using `smartctl -a -d 3ware,11 /dev/twa0`.
 
 ## Computers
 
