@@ -258,7 +258,8 @@ On the other hand, `smartctl` operates on `VPort` numbers. So for the drive in b
     Internal IP: 10.20.32.90
     Hostname:    printer1.cloyne.net
     Location:    Pool/Mail room
-    MAC:         30:05:5C:A8:CD:68
+    Wired MAC:         30:05:5C:A8:CD:68
+    Wireless MAC:      44-1c-a8-38-ea-2b
 
 ### label printer (Brother QL-710W) ###
 
