@@ -128,7 +128,7 @@ https://www.facebook.com/groups/1479825148929634/
 We also have a file server where you can share files with your
 fellow members:
 
-http://files.cloyne.net
+https://files.cloyne.org
 
 If anyone is interested in helping doing computer, network, programming,
 and similar stuff for workshift, tell me and let's hack together. :-)
@@ -302,7 +302,7 @@ information:
 - name: [Pool Room] Brother MFC-9340CDW
 - type: Brother MFC-9340CDW
 - IP Address: 10.20.32.90
-- address: printer1.cloyne.net
+- address: printer1.cloyne.org
 
 If prompted, do not select "share printer".
 
