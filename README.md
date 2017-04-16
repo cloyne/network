@@ -50,9 +50,9 @@ It is a [Mikrotik RouterBoard 450G](http://routerboard.com/RB450G).
 
     External IP: 64.62.133.43 (eth0)
     Hostname:    server1.cloyne.org
-    Login:       username root
+    Login:       username cloyne + sudo su for root 
 
-Running Debian Linux distribution as a host for Docker images. Services:
+Running Ubuntu LTS distribution as a host for Docker images. Services:
  * Secondary DNS server
 
 Partitions:
@@ -63,17 +63,17 @@ Partitions:
     External IP: 64.62.133.44 (eth0)
     Hostname:    server2.cloyne.org
     Internal IP: 10.20.32.10 (eth1)
-    Login:       username root
+    Login:       username cloyne + sudo su for root 
 
-Running Debian Linux distribution as a host for Docker images. Services:
+Running Ubuntu LTS distribution as a host for Docker images. Services:
  * Primary DNS server
  * Mail server (Postfix)
  * MySQL
  * PostgreSQL
  * Nginx reverse proxy
- * [phpMyAdmin](http://cloyne.org/phpmyadmin/)
- * [phpPgAdmin](http://cloyne.org/phppgadmin/)
- * [Cloyne.org](http://cloyne.org) blog (Wordpress)
+ * [phpMyAdmin](https://cloyne.org/phpmyadmin/)
+ * [phpPgAdmin](https://cloyne.org/phppgadmin/)
+ * [Cloyne.org](https://cloyne.org) blog (Wordpress)
 
 Partitions:
  * root: `/dev/sdg1`
@@ -94,12 +94,13 @@ md1 : active raid1 sda1[2] sdb1[1] sdc1[0]
 
 ### server3 ###
 
-    Internal IP: 10.20.32.11 (p5p1)
-    Internal IP: 172.16.0.103 (p6p1)
+    External IP: 64.62.133.45 (p1p1)
     Hostname:    server3.cloyne.org
+    Internal IP: 10.20.32.11 (p1p2)
+    Internal IP: 172.16.0.103 (p1p3)
     Login:       username cloyne + sudo su for root 
 
-Running Ubuntu Server Linux distribution as a host for Docker images. It contains 8 x 3 TB hard drives, 6 x 750 GB drives, configured in pairs into RAID-1, combined into a 13 TB LVM volume. Services:
+Running Ubuntu LTS distribution as a host for Docker images. It contains 8 x 3 TB hard drives, 6 x 750 GB drives, configured in pairs into RAID-1, combined into a 13 TB LVM volume. Services:
  * ownCloud
  * nodewatcher
 
