@@ -29,7 +29,7 @@ Bandwidth limit is 100 Mbit/s.
 
     External IP:       64.62.133.41
     Netmask:           255.255.255.248 (/29)
-    Hostname:          he.cloyne.net
+    Hostname:          he.cloyne.org
     Other IP:          64.62.214.118
 
 It is a [Mikrotik RouterBoard 2011UiAS-RM](http://routerboard.com/RB2011UiAS-RM).
@@ -39,7 +39,7 @@ It is a [Mikrotik RouterBoard 2011UiAS-RM](http://routerboard.com/RB2011UiAS-RM)
     External IP:       64.62.133.42
     Internal IP:       10.20.32.1
     Netmask:           255.255.255.248 (/29)
-    Hostname:          router.cloyne.net
+    Hostname:          router.cloyne.org
     DHCP client range: 10.20.32.100 - 10.20.35.190 (859 addresses)
 
 It is a [Mikrotik RouterBoard 450G](http://routerboard.com/RB450G).
@@ -49,7 +49,7 @@ It is a [Mikrotik RouterBoard 450G](http://routerboard.com/RB450G).
 ### server1 ###
 
     External IP: 64.62.133.43 (eth0)
-    Hostname:    server1.cloyne.net
+    Hostname:    server1.cloyne.org
     Login:       username root
 
 Running Debian Linux distribution as a host for Docker images. Services:
@@ -61,7 +61,7 @@ Partitions:
 ### server2 ###
 
     External IP: 64.62.133.44 (eth0)
-    Hostname:    server2.cloyne.net
+    Hostname:    server2.cloyne.org
     Internal IP: 10.20.32.10 (eth1)
     Login:       username root
 
@@ -71,8 +71,8 @@ Running Debian Linux distribution as a host for Docker images. Services:
  * MySQL
  * PostgreSQL
  * Nginx reverse proxy
- * [phpMyAdmin](http://cloyne.net/phpmyadmin/)
- * [phpPgAdmin](http://cloyne.net/phppgadmin/)
+ * [phpMyAdmin](http://cloyne.org/phpmyadmin/)
+ * [phpPgAdmin](http://cloyne.org/phppgadmin/)
  * [Cloyne.org](http://cloyne.org) blog (Wordpress)
 
 Partitions:
@@ -96,7 +96,7 @@ md1 : active raid1 sda1[2] sdb1[1] sdc1[0]
 
     Internal IP: 10.20.32.11 (p5p1)
     Internal IP: 172.16.0.103 (p6p1)
-    Hostname:    server3.cloyne.net
+    Hostname:    server3.cloyne.org
     Login:       username cloyne + sudo su for root 
 
 Running Ubuntu Server Linux distribution as a host for Docker images. It contains 8 x 3 TB hard drives, 6 x 750 GB drives, configured in pairs into RAID-1, combined into a 13 TB LVM volume. Services:
@@ -243,20 +243,12 @@ Using that you can see under which device filename you can a hard drive. For exa
 
 On the other hand, `smartctl` operates on `VPort` numbers. So for the drive in bay 11, you can access its SMART information using `smartctl -a -d 3ware,11 /dev/twa0`.
 
-## Computers
-
-### Maintanance room ###
-
-    Internal IP: 10.20.32.80
-    Hostname:    maintenance.cloyne.net
-    MAC:         64:31:50:25:B1:84
-
 ## Printers
 
 ### printer1 (Brother MFC-9330CDW) ###
 
     Internal IP:  10.20.32.90
-    Hostname:     printer1.cloyne.net
+    Hostname:     printer1.cloyne.org
     Location:     Pool/Mail room
     Wired MAC:    30:05:5C:A8:CD:68
     Wireless MAC: 44-1c-a8-38-ea-2b
@@ -269,7 +261,7 @@ On the other hand, `smartctl` operates on `VPort` numbers. So for the drive in b
 ### Makerspace printer (Canon MX870) ###
 
     Internal IP: 10.20.32.92
-    Hostname:    printer2.cloyne.net
+    Hostname:    printer2.cloyne.org
     Location:    W0B (Makerspace)
     MAC:         00:1E:8F:98:3B:1E
 
