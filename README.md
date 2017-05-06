@@ -83,11 +83,13 @@ Partitions:
 ```
 $ cat /proc/mdstat
 
-md0 : active raid1 sde1[1] sdf1[0]
+md0 : active raid1 sdd1[1] sde1[0]
       488253248 blocks super 1.2 [2/2] [UU]
-md1 : active raid1 sda1[2] sdb1[1] sdc1[0]
-      1465006080 blocks super 1.2 [3/3] [UUU]
-      bitmap: 11/11 pages [44KB], 65536KB chunk
+      
+md1 : active raid1 sdb1[1] sda1[2]
+      1465006080 blocks super 1.2 [2/2] [UU]
+      bitmap: 9/11 pages [36KB], 65536KB chunk
+
 ```
 
 `md1` is a RAID-1 with three hard drives.
