@@ -79,7 +79,7 @@ Running Ubuntu LTS distribution as a host for Docker images. Services:
 Partitions:
  * root: `/dev/sdg1`
  * `/srv`: `/dev/md1`
- * `/srv/mnt`: `/dev/md0` (used for local backup)
+ * `/srv/mnt`: `/dev/md0` (used for daily local backup of files and databases, using [tozd/rdiff-backup](https://github.com/tozd/docker-rdiff-backup) Docker image)
 
 ```
 $ cat /proc/mdstat
