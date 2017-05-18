@@ -256,6 +256,14 @@ In the past, `cloyne.net` was used for things accessible only inside the local n
 
 To configure DNS entries for domain names, one has to just edit [configuration files in our Docker image](https://github.com/cloyne/docker-powerdns-master/tree/master/etc/powerdns/bind). Configuration for reverse DNS entries for our public IP range is available there as well. Once configuration is changed, Docker image is automatically rebuild [by Docker Hub](https://hub.docker.com/r/cloyne/powerdns-master/). And after that it is only necessary to push the new image to server2. server1 will automatically pull new changes from server2.
 
+## Mailing lists
+
+We host our own [mailing lists](https://cloyne.org/lists/) using [Sympa](https://www.sympa.org/) software on server2. We also send e-mails ourselves from server2.
+
+Currently, every semester we move existing subscribers of mailing lists to a new mailing list for that semester, and repopulate mailing lists with current members. Some mailing lists automatically source their subscribers from other mailing lists (`from-central` sources `announce`, so one only has to change `announce`; `alumni` sources from all previous semesters' mailing lists). So in general it is required only to maintain subscribers of `clones` and `announce` mailing lists. For `clones` members can remove themselves, while for `announce` they cannot (it is used for important announcements by managers). Instructions how to do all the necessary changes at the beginning of every semester are in a separate [document](https://github.com/cloyne/network/blob/master/new-semester.md).
+
+Members can request additional mailing lists [here](https://cloyne.org/lists/create_list_request). In general, we welcome such custom mailing lists and approve them.
+
 ## Printers
 
 ### printer1 (Brother MFC-9330CDW) ###
