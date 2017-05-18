@@ -53,9 +53,11 @@ It is a [Mikrotik RouterBoard 450G](http://routerboard.com/RB450G).
     Login:       username cloyne + sudo su for root 
 
 Running Ubuntu LTS distribution as a host for Docker images. Services:
+
  * Secondary DNS server (using [cloyne/powerdns-slave](https://github.com/cloyne/docker-powerdns-slave) Docker image)
 
 Partitions:
+
  * root: `/dev/disk/by-uuid/5d604660-e02f-41e8-8f39-877a38f32f67`
 
 ### server2 ###
@@ -66,6 +68,7 @@ Partitions:
     Login:       username cloyne + sudo su for root 
 
 Running Ubuntu LTS distribution as a host for Docker images. Services:
+
  * Primary DNS server (using [cloyne/powerdns-master](https://github.com/cloyne/docker-powerdns-master) Docker image)
  * Mail server (Postfix) (using [cloyne/postfix](https://github.com/cloyne/postfix) Docker image)
  * MySQL (using [tozd/mysql](https://github.com/tozd/mysql) Docker image)
@@ -77,6 +80,7 @@ Running Ubuntu LTS distribution as a host for Docker images. Services:
  * local [iperf server](https://iperf.fr/) (using [tozd/iperf](https://github.com/tozd/iperf) Docker image)
 
 Partitions:
+
  * root: `/dev/sdg1`
  * `/srv`: `/dev/md1`
  * `/srv/mnt`: `/dev/md0` (used for daily local backup of files and databases, using [tozd/rdiff-backup](https://github.com/tozd/docker-rdiff-backup) Docker image)
@@ -101,6 +105,7 @@ md1 : active raid1 sdb1[1] sda1[2]
     Login:       username cloyne + sudo su for root 
 
 Running Ubuntu LTS distribution as a host for Docker images. It contains 8 x 3 TB hard drives, 6 x 750 GB drives, configured in pairs into RAID-1, combined into a 13 TB LVM volume. Services:
+
  * [ownCloud](https://owncloud.org/) (using [cloyne/owncloud](https://github.com/cloyne/owncloud) Docker image)
  * local [iperf server](https://iperf.fr/) (using [tozd/iperf](https://github.com/tozd/iperf) Docker image)
  * [nodewatcher](http://nodewatcher.net/) (TODO)
@@ -108,7 +113,8 @@ Running Ubuntu LTS distribution as a host for Docker images. It contains 8 x 3 T
 One hard drive bay (8) is currently empty because of a failed hard drive. Its mirror (`/dev/sdg1`, bay 5, 750 GB) can be used as a replacement for some other drive when needed.
 
 Partitions:
- * root: `/dev/sda1`
+
+* root: `/dev/sda1`
  * `/srv`: `/dev/mapper/vg0-srv`
 
 ```
@@ -259,6 +265,7 @@ To be able to run the `state.highstate` command one has to add their public SSH 
 ## Domain names
 
 Cloyne owns the following domain names:
+
 * `cloyne.org`
 * `cloyne.net`
 * `savecloyne.com`
@@ -274,6 +281,34 @@ We host our own [mailing lists](https://cloyne.org/lists/) using [Sympa](https:/
 Currently, every semester we move existing subscribers of mailing lists to a new mailing list for that semester, and repopulate mailing lists with current members. Some mailing lists automatically source their subscribers from other mailing lists (`from-central` sources `announce`, so one only has to change `announce`; `alumni` sources from all previous semesters' mailing lists). So in general it is required only to maintain subscribers of `clones` and `announce` mailing lists. For `clones` members can remove themselves, while for `announce` they cannot (it is used for important announcements by managers). Instructions how to do all the necessary changes at the beginning of every semester are in a separate [document](https://github.com/cloyne/network/blob/master/new-semester.md).
 
 Members can request additional mailing lists [here](https://cloyne.org/lists/create_list_request). In general, we welcome such custom mailing lists and approve them.
+
+## Web site (blog)
+
+[https://cloyne.org/](https://cloyne.org/) uses [Wordpress](https://wordpress.org/) for Cloyne's web site and blog. The idea of the website is to provide:
+
+* a place for common resource for existing members
+* a place for an online calendar for events in Cloyne
+* a place for information for incoming members (where is Cloyne, what is Cloyne, who to contact for move-ins)
+* a place for alumni to see what is happening in Cloyne these days
+* a place for members to post blog posts for others to see: related to Cloyne or not
+* through blog posts and calendar have a historical record of what is happening in Cloyne, to remember and dream
+
+At every semester ([instructions here](https://github.com/cloyne/network/blob/master/new-semester.md)) new members get accounts created on the site so that they can add content (blog posts and events). Managers should already have accounts and should probably just reset the password if they were not given the password from previous semester's managers.
+
+Wordpress provides multiple roles for users and we map them in the following way:
+
+* administrator – admins of the whole web site
+* editor – all managers who can edit all content (posts by others, static pages)
+* author – all members (current and past) who can add new content (blog posts and events) but cannot edit those of others
+* subscriber – anyone who registers on the web site
+
+To update the installation, one has to update the [base Docker image](https://github.com/cloyne/docker-wordpress). Based on that image we then have [the final Docker image](https://github.com/cloyne/docker-blog) which adds additional plugins and our own theme.
+
+Our theme is based on Twenty Thirteen theme from Wordpress, so when that theme is updated, our theme should be updated as well. To make updating easier we can use git to merge new upstream changes to the theme with our changes to theme. A process is as follows:
+
+ * in our [repository](https://github.com/cloyne/docker-blog) find the latest commit in the history with unchanged upstream theme being committed and checkout to that commit
+ * update the theme at that commit with new upstream content and commit it as new version, remember its hash reference
+ * checkout back to `master` branch and merge the above made commit into the `master` branch; git will try to merge changes, if not successful, you will have to manually resolve merge conflicts
 
 ## Printers
 
