@@ -53,7 +53,7 @@ It is a [Mikrotik RouterBoard 450G](http://routerboard.com/RB450G).
     Login:       username cloyne + sudo su for root 
 
 Running Ubuntu LTS distribution as a host for Docker images. Services:
- * Secondary DNS server
+ * Secondary DNS server (using [cloyne/powerdns-slave](https://github.com/cloyne/docker-powerdns-slave) Docker image)
 
 Partitions:
  * root: `/dev/disk/by-uuid/5d604660-e02f-41e8-8f39-877a38f32f67`
@@ -66,19 +66,20 @@ Partitions:
     Login:       username cloyne + sudo su for root 
 
 Running Ubuntu LTS distribution as a host for Docker images. Services:
- * Primary DNS server
- * Mail server (Postfix)
- * MySQL
- * PostgreSQL
- * Nginx reverse proxy
- * [phpMyAdmin](https://cloyne.org/phpmyadmin/)
- * [phpPgAdmin](https://cloyne.org/phppgadmin/)
- * [Cloyne.org](https://cloyne.org) blog (Wordpress)
+ * Primary DNS server (using [cloyne/powerdns-master](https://github.com/cloyne/docker-powerdns-master) Docker image)
+ * Mail server (Postfix) (using [cloyne/postfix](https://github.com/cloyne/postfix) Docker image)
+ * MySQL (using [tozd/mysql](https://github.com/tozd/mysql) Docker image)
+ * PostgreSQL (using [tozd/postgresql](https://github.com/tozd/postgresql) Docker image)
+ * Nginx reverse proxy (using [cloyne/web](https://github.com/cloyne/web) Docker image)
+ * [phpMyAdmin](https://cloyne.org/phpmyadmin/) (using [tozd/phpmyadmin](https://github.com/tozd/phpmyadmin) Docker image)
+ * [phpPgAdmin](https://cloyne.org/phppgadmin/) (using [tozd/phppgadmin](https://github.com/tozd/phppgadmin) Docker image)
+ * [Cloyne.org](https://cloyne.org) blog (Wordpress) (using [cloyne/blog](https://github.com/cloyne/blog) Docker image)
+ * local [iperf server](https://iperf.fr/) (using [tozd/iperf](https://github.com/tozd/iperf) Docker image)
 
 Partitions:
  * root: `/dev/sdg1`
  * `/srv`: `/dev/md1`
- * `/srv/mnt`: `/dev/md0` (used for internal backup)
+ * `/srv/mnt`: `/dev/md0` (used for local backup)
 
 ```
 $ cat /proc/mdstat
@@ -89,10 +90,7 @@ md0 : active raid1 sdd1[1] sde1[0]
 md1 : active raid1 sdb1[1] sda1[2]
       1465006080 blocks super 1.2 [2/2] [UU]
       bitmap: 9/11 pages [36KB], 65536KB chunk
-
 ```
-
-`md1` is a RAID-1 with three hard drives.
 
 ### server3 ###
 
@@ -103,8 +101,9 @@ md1 : active raid1 sdb1[1] sda1[2]
     Login:       username cloyne + sudo su for root 
 
 Running Ubuntu LTS distribution as a host for Docker images. It contains 8 x 3 TB hard drives, 6 x 750 GB drives, configured in pairs into RAID-1, combined into a 13 TB LVM volume. Services:
- * ownCloud
- * nodewatcher
+ * [ownCloud](https://owncloud.org/) (using [cloyne/owncloud](https://github.com/cloyne/owncloud) Docker image)
+ * local [iperf server](https://iperf.fr/) (using [tozd/iperf](https://github.com/tozd/iperf) Docker image)
+ * [nodewatcher](http://nodewatcher.net/) (TODO)
 
 One hard drive bay (8) is currently empty because of a failed hard drive. Its mirror (`/dev/sdg1`, bay 5, 750 GB) can be used as a replacement for some other drive when needed.
 
