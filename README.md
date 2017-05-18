@@ -245,6 +245,17 @@ Using that you can see under which device filename you can a hard drive. For exa
 
 On the other hand, `smartctl` operates on `VPort` numbers. So for the drive in bay 11, you can access its SMART information using `smartctl -a -d 3ware,11 /dev/twa0`.
 
+## Servers' configuration
+
+All servers are by itself just Docker hosts and no real functionality runs directly on hosts. All functionality is packed in Docker images which we run on servers.
+
+To configure Docker images which run on servers we use orchestration tool [Salt](https://saltstack.com/). Configuration
+for all servers is thus stored in [the repository](https://github.com/cloyne/servers). Configuration describes a state
+we want a server to be in (which Docker images should run, what volumes should be mounted, etc.) and by running
+`salt-ssh '<servername>' state.highstate` Salt configures the server to match the wanted state.
+
+To be able to run the `state.highstate` command one has to add their public SSH key to server's `cloyne` user `~/.ssh/authorized_keys` file. Then you can login into the server without typing your password, and `salt-ssh` can do the same.
+
 ## Domain names
 
 Cloyne owns the following domain names:
