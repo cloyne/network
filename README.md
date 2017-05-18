@@ -245,6 +245,17 @@ Using that you can see under which device filename you can a hard drive. For exa
 
 On the other hand, `smartctl` operates on `VPort` numbers. So for the drive in bay 11, you can access its SMART information using `smartctl -a -d 3ware,11 /dev/twa0`.
 
+## Domain names
+
+Cloyne owns the following domain names:
+* `cloyne.org`
+* `cloyne.net`
+* `savecloyne.com`
+
+In the past, `cloyne.net` was used for things accessible only inside the local network, and `cloyne.org` for thing accessible publicly, but that lead to the confusion by members. So now we are using `cloyne.org` for everything and `cloyne.net` is just a redirect to `cloyne.org` for things which were before there.
+
+To configure DNS entries for domain names, one has to just edit [configuration files in our Docker image](https://github.com/cloyne/docker-powerdns-master/tree/master/etc/powerdns/bind). Configuration for reverse DNS entries for our public IP range is available there as well. Once configuration is changed, Docker image is automatically rebuild [by Docker Hub](https://hub.docker.com/r/cloyne/powerdns-master/). And after that it is only necessary to push the new image to server2. server1 will automatically pull new changes from server2.
+
 ## Printers
 
 ### printer1 (Brother MFC-9330CDW) ###
