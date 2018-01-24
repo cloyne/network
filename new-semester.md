@@ -30,7 +30,7 @@ year and season, like `clones.2014f@cloyne.org`, `clones.2015s@cloyne.org` or `c
 Detailed steps:
 * Prepare a list of current members e-mail addresses in the format `EMAIL NAME` with each entry in the separate line.
 So e-mail address is separated from name with a space, and each e-mail address is in its own line. A bit of copy-pasting
-and regular expressions can help you with that. **Make sure there are no commas in names.** (This can confuse a CSV file later on.)
+and regular expressions can help you with that. **Make sure there are no commas in names.** (This can confuse a CSV file later on.) Add the line `matthew@bsc.coop Matthew` to the end of the list.
 * Login with `clonm@bsc.coop` account [http://cloyne.org/lists/](http://cloyne.org/lists/).
 * Open [http://cloyne.org/lists/review/announce](http://cloyne.org/lists/review/announce).
 * Remove all subscribers by clicking on "Toggle selection" at the end of the page to select all, check "Quiet",
