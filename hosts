@@ -1,0 +1,59 @@
+############ Cloyne ############
+### Internet uplink
+64.62.133.41    he-tun          # Github says this is "HE router"
+
+# 64.62.214.116/30 (point to point connection)
+64.62.214.117   he
+64.62.214.118   he-router       # "Cloyne", also "other IP" under "HE router"
+                                # and he.cloyne.org
+# Main router
+64.62.133.42    clo-router-ext  # also router.cloyne.org
+10.20.32.1      clo-router-int
+
+# Cloyne APs
+10.20.32.40 libed      #, 04:18:d6:20:60:44, Ubiquiti UniFi AP Pro, channel 6, 48
+10.20.32.41 w3j        #, e8:94:f6:68:87:51, TP-LINK TL-WR1043ND v2, channel 11
+10.20.32.42 e2j        #, 04:18:d6:20:58:df, Ubiquiti UniFi AP Pro, channel 6, 132
+10.20.32.43 w2c        #, 04:18:d6:20:5c:fe, Ubiquiti UniFi AP Pro, channel 6, 124
+10.20.32.44 w3a        #, c0:4a:00:5d:c3:f3, TP-LINK TL-WR1043ND v2, channel 1
+10.20.32.45 w0b        #, c0:4a:00:40:e3:61, TP-LINK TL-WR1043ND v2, channel 1
+10.20.32.46 e3ab       #, e8:94:f6:68:84:78, TP-LINK TL-WR1043ND v2, channel 1
+10.20.32.47 diningroom #, 04:18:d6:20:59:c8, Ubiquiti UniFi AP Pro, channel 1, 116
+10.20.32.48 e2d        #, 04:18:d6:20:5a:1f, Ubiquiti UniFi AP Pro, channel 11, 108
+10.20.32.49 w2h        #, 04:18:d6:20:59:c7, Ubiquiti UniFi AP Pro, channel 1, 100
+10.20.32.50 c2p        #, 04:18:d6:20:58:e4, Ubiquiti UniFi AP Pro, channel 11, 64
+10.20.32.51 c2c        #, 04:18:d6:20:5f:e6, Ubiquiti UniFi AP Pro, channel 1, 56
+10.20.32.52 w1e        #, 90:f6:52:ea:05:ec, TP-LINK TL-WR1043ND, channel 11
+10.20.32.53 c3k        #, 90:F6:52:2A:08:54, TP-LINK TL-WR1043ND, channel 6
+# Cloyne Switches
+10.20.32.20 turing2  # Network Room 2, fc:75:16:68:b4:49
+10.20.32.21 c2k      #, 14:d6:4d:1e:4:16
+10.20.32.22 e2sc     #, fc:75:16:68:bb:f9
+10.20.32.23 c3l      #, fc:75:16:68:bb:c9
+10.20.32.24 e3sb     #, fc:75:16:68:b4:19
+10.20.32.25 mailroom #, 14:d6:4d:1e:03:e6
+10.20.32.26 w2sb     #, fc:75:16:68:b4:a9
+10.20.32.27 turing1  #, fc:75:16:68:bb:99
+10.20.32.28 w3sb     #, fc:75:16:68:b4:79
+
+### Cloyne Servers
+64.62.133.43    server1         # Server 1 external IP (eth0)
+64.62.133.44    server2-ext     # Server 2 external IP (eht0)
+10.20.32.10     server2         # Server 2 internal IP (eth1)
+64.62.133.45    server3-ext     # Server 3 external IP (p1p1)
+10.20.32.11     server3         # Server 3 internal IP (p1p2)
+172.16.0.103    server3-p3      # Server 3 internal IP (p1p3)
+
+### Cloyne Mesh
+10.20.35.210    clo-kng # 24:A4:3C:9C:F6:AD
+10.20.35.211    clo-euc # 04:18:D6:A4:84:77
+10.20.35.212    kng-clo # 24:A4:3C:BE:4E:A0
+10.20.35.240    clo-euc # KORUZA, B8:27:EB:7A:6A:BB
+10.20.35.241    euc-clo # KORUZA, B8:27:EB:23:21:E7
+
+# Kingman
+10.20.33.44  kng-router
+10.20.35.220 kng-study # 80:2a:a8:13:4b:ed, Ubiquiti UniFi AP-AC-Pro, channel 11, 44
+10.20.35.221 kng-clst  # 80:2a:a8:13:4a:19, Ubiquiti UniFi AP-AC-Pro, channel 1, 149
+10.20.35.222 kng-dine  # 80:2a:a8:13:4b:bb, Ubiquiti UniFi AP-AC-Pro, channel 1, 36
+10.20.35.223 kng-2nd   # 80:2a:a8:13:4b:c5, Ubiquiti UniFi AP-AC-Pro, channel 6, 161
