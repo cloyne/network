@@ -1,6 +1,6 @@
 # Cloyne network
 
-## Internet uplink
+## [Internet uplink](https://github.com/cloyne/network/wiki/Internet-Uplink;-domains-and-IPs)
 
 Through [Hurricane Electric](https://he.net/).
 
@@ -44,7 +44,7 @@ It is a [Mikrotik RouterBoard 2011UiAS-RM](http://routerboard.com/RB2011UiAS-RM)
 
 It is a [Mikrotik RouterBoard 450G](http://routerboard.com/RB450G).
 
-## Servers
+## [Servers](https://github.com/cloyne/network/wiki/Servers)
 
 ### server1 ###
 
@@ -262,7 +262,7 @@ we want a server to be in (which Docker images should run, what volumes should b
 
 To be able to run the `state.highstate` command one has to add their public SSH key to server's `cloyne` user `~/.ssh/authorized_keys` file. Then you can login into the server without typing your password, and `salt-ssh` can do the same.
 
-## Domain names
+## [Domain names](https://github.com/cloyne/network/wiki/Domains-and-IPs)
 
 Cloyne owns the following domain names:
 
@@ -273,6 +273,8 @@ Cloyne owns the following domain names:
 In the past, `cloyne.net` was used for things accessible only inside the local network, and `cloyne.org` for thing accessible publicly, but that lead to the confusion by members. So now we are using `cloyne.org` for everything and `cloyne.net` is just a redirect to `cloyne.org` for things which were before there.
 
 To configure DNS entries for domain names, one has to just edit [configuration files in our Docker image](https://github.com/cloyne/docker-powerdns-master/tree/master/etc/powerdns/bind). Configuration for reverse DNS entries for our public IP range is available there as well. Once configuration is changed, Docker image is automatically rebuild [by Docker Hub](https://hub.docker.com/r/cloyne/powerdns-master/). And after that it is only necessary to push the new image to server2. server1 will automatically pull new changes from server2.
+
+# [Web Apps](https://github.com/cloyne/network/wiki/Web-Apps)
 
 ## Mailing lists
 
@@ -309,6 +311,8 @@ Our theme is based on Twenty Thirteen theme from Wordpress, so when that theme i
  * in our [repository](https://github.com/cloyne/docker-blog) find the latest commit in the history with unchanged upstream theme being committed and checkout to that commit
  * update the theme at that commit with new upstream content and commit it as new version, remember its hash reference
  * checkout back to `master` branch and merge the above made commit into the `master` branch; git will try to merge changes, if not successful, you will have to manually resolve merge conflicts
+
+# [IP Addresses](https://github.com/cloyne/network/wiki/Domains-and-IPs)
 
 ## Printers
 
