@@ -1,7 +1,7 @@
 # Cloyne network
 
 ## [Internet uplink](https://github.com/cloyne/network/wiki/Internet-Uplink;-domains-and-IPs)
-=======
+
 We are migrating documentation to the cloyne/network
 [wiki](http://github.com/cloyne/network/wiki). This page is a quick reference
 for internet and intranet connectivity.
@@ -50,7 +50,7 @@ Through [Hurricane Electric](https://he.net/).
 
 Bandwidth limit is 100 Mbit/s.
 
-### Static IPv4 addresses at a glance:
+## Static IPv4 addresses at a glance:
 
 Device       | Internal IP        | External IP          | Hostname            | Hardware | Other
 -------------|--------------------|----------------------|---------------------|----------|-------
@@ -114,6 +114,7 @@ Other 10.20.* ranges are described in [bsc-networks/mesh](https://github.com/bsc
 Kingman APs are temporary configured to the 10.20.35.220/30 IP range until Kingman gets its own router.
 
 We use Dlink Smart Console Utility to manage IP allocations of switches. Switches have web interface to manage their ports. The default gateway port is port 1 and DHCP traffic is only allowed through that port. To change this, edit the security settings in the switch's web configuration by going to security -> dhcp screening.
+
 Old (not in used by stored in storage, we keep this information to know how to connect to a device if we will want to reuse it):
 
  * [192.168.0.42](http://192.168.0.42) - C2K, a0:f3:c1:ff:2a:94, TP-Link, channel 11
