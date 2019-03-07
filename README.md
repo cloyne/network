@@ -1,7 +1,5 @@
 # Cloyne network
 
-## [Internet uplink](https://github.com/cloyne/network/wiki/Internet-Uplink;-domains-and-IPs)
-
 We are migrating documentation to the cloyne/network
 [wiki](http://github.com/cloyne/network/wiki). This page is a quick reference
 for internet and intranet connectivity.
