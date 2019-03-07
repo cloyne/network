@@ -52,7 +52,9 @@ It is a [Mikrotik RouterBoard 450G](http://routerboard.com/RB450G).
     Hostname:    server1.cloyne.org
     Login:       username cloyne + sudo su for root 
 
-Running Ubuntu LTS distribution as a host for Docker images. Services:
+Running Ubuntu LTS distribution as a host for Docker images. 2-core Intel Atom processor and 4GB RAM. 64 GB SSD.
+
+Services:
 
  * Secondary DNS server (using [cloyne/powerdns-slave](https://github.com/cloyne/docker-powerdns-slave) Docker image)
 
@@ -65,7 +67,9 @@ Partitions:
     External IP: 64.62.133.44 (eth0)
     Hostname:    server2.cloyne.org
     Internal IP: 10.20.32.10 (eth1)
-    Login:       username cloyne + sudo su for root 
+    Login:       username cloyne + sudo su for root
+
+Running Ubuntu LTS distribution as a host for Docker images. 2-core Intel Atom processor and 4GB RAM.
 
 Running Ubuntu LTS distribution as a host for Docker images. Services:
 
@@ -80,8 +84,9 @@ Running Ubuntu LTS distribution as a host for Docker images. Services:
  * local [iperf server](https://iperf.fr/) (using [tozd/iperf](https://github.com/tozd/iperf) Docker image)
 
 Partitions:
+64 GB SSD (sda) + 2x 1500 GB HDD (sdb and sdc) + 2x 500 GB HDD (sdd, sde).
 
- * root: `/dev/sdg1`
+ * root: `/dev/mapper/server2--vg-root` (64 GB SSD)
  * `/srv`: `/dev/md1`
  * `/srv/mnt`: `/dev/md0` (used for daily local backup of files and databases, using [tozd/rdiff-backup](https://github.com/tozd/docker-rdiff-backup) Docker image)
 
@@ -90,10 +95,10 @@ $ cat /proc/mdstat
 
 md0 : active raid1 sdd1[1] sde1[0]
       488253248 blocks super 1.2 [2/2] [UU]
-      
-md1 : active raid1 sdb1[1] sda1[2]
+
+md1 : active raid1 sdc1[1] sdb1[2]
       1465006080 blocks super 1.2 [2/2] [UU]
-      bitmap: 9/11 pages [36KB], 65536KB chunk
+      bitmap: 3/11 pages [12KB], 65536KB chunk
 ```
 
 ### server3 ###
