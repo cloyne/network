@@ -4,7 +4,7 @@
 
 Through [Hurricane Electric](https://he.net/).
 
-    64.62.133.40/29 
+    64.62.133.40/29
     Network:              64.62.133.40
     Netmask:              255.255.255.248
     Broadcast:            64.62.133.47
@@ -50,7 +50,7 @@ It is a [Mikrotik RouterBoard 450G](http://routerboard.com/RB450G).
 
     External IP: 64.62.133.43 (eth0)
     Hostname:    server1.cloyne.org
-    Login:       username cloyne + sudo su for root 
+    Login:       username cloyne + sudo su for root
 
 Running Ubuntu LTS distribution as a host for Docker images. 2-core Intel Atom processor and 4GB RAM. 64 GB SSD.
 
@@ -71,7 +71,7 @@ Partitions:
 
 Running Ubuntu LTS distribution as a host for Docker images. 2-core Intel Atom processor and 4GB RAM.
 
-Running Ubuntu LTS distribution as a host for Docker images. Services:
+Services:
 
  * Primary DNS server (using [cloyne/powerdns-master](https://github.com/cloyne/docker-powerdns-master) Docker image)
  * Mail server (Postfix) (using [cloyne/postfix](https://github.com/cloyne/postfix) Docker image)
@@ -107,7 +107,7 @@ md1 : active raid1 sdc1[1] sdb1[2]
     Hostname:    server3.cloyne.org
     Internal IP: 10.20.32.11 (p1p2)
     Internal IP: 172.16.0.103 (p1p3)
-    Login:       username cloyne + sudo su for root 
+    Login:       username cloyne + sudo su for root
 
 Running Ubuntu LTS distribution as a host for Docker images. It contains 8 x 3 TB hard drives, 6 x 750 GB drives, configured in pairs into RAID-1, combined into a 13 TB LVM volume. Services:
 
@@ -158,38 +158,38 @@ $ lvdisplay --maps
   Read ahead sectors     auto
   - currently set to     256
   Block device           252:0
-   
+
   --- Segments ---
   Logical extent 0 to 715219:
     Type		linear
     Physical volume	/dev/md0
     Physical extents	0 to 715219
-   
+
   Logical extent 715220 to 1430439:
     Type		linear
     Physical volume	/dev/md1
     Physical extents	0 to 715219
-   
+
   Logical extent 1430440 to 2145659:
     Type		linear
     Physical volume	/dev/md2
     Physical extents	0 to 715219
-   
+
   Logical extent 2145660 to 2860879:
     Type		linear
     Physical volume	/dev/md3
     Physical extents	0 to 715219
-   
+
   Logical extent 2860880 to 3039657:
     Type		linear
     Physical volume	/dev/md7
     Physical extents	0 to 178777
-   
+
   Logical extent 3039658 to 3218435:
     Type		linear
     Physical volume	/dev/md5
     Physical extents	0 to 178777
-   
+
   Logical extent 3218436 to 3371191:
     Type		linear
     Physical volume	/dev/md6
@@ -198,7 +198,7 @@ $ lvdisplay --maps
 
 ```
 $ pvs -o+pv_used
-  PV         VG   Fmt  Attr PSize   PFree   Used   
+  PV         VG   Fmt  Attr PSize   PFree   Used
   /dev/md0   vg0  lvm2 a--    2.73t      0    2.73t
   /dev/md1   vg0  lvm2 a--    2.73t      0    2.73t
   /dev/md2   vg0  lvm2 a--    2.73t      0    2.73t
@@ -212,21 +212,21 @@ $ pvs -o+pv_used
 $ ~/files/tw_cli/tw_cli /c2 show
 Unit  UnitType  Status         %RCmpl  %V/I/M  Stripe  Size(GB)  Cache  AVrfy
 ------------------------------------------------------------------------------
-u0    SINGLE    VERIFYING      -       75%     -       2793.96   Ri     ON     
-u1    SINGLE    VERIFYING      -       75%     -       2793.96   Ri     ON     
-u2    SINGLE    VERIFYING      -       30%     -       2793.96   Ri     ON     
-u3    SINGLE    VERIFYING      -       0%      -       2793.96   Ri     ON     
-u4    SINGLE    VERIFY-PAUSED  -       0%      -       2793.96   Ri     ON     
-u5    SINGLE    VERIFY-PAUSED  -       0%      -       698.481   Ri     ON     
-u6    SINGLE    VERIFY-PAUSED  -       0%      -       2793.96   Ri     ON     
-u7    SINGLE    VERIFY-PAUSED  -       0%      -       2793.96   Ri     ON     
-u8    SINGLE    VERIFY-PAUSED  -       0%      -       698.481   Ri     ON     
-u9    SINGLE    VERIFY-PAUSED  -       0%      -       698.481   Ri     ON     
-u10   SINGLE    VERIFY-PAUSED  -       0%      -       2793.96   Ri     ON     
-u11   SINGLE    VERIFY-PAUSED  -       0%      -       698.481   Ri     ON     
-u12   SINGLE    VERIFY-PAUSED  -       0%      -       698.481   Ri     ON     
-u13   SINGLE    VERIFY-PAUSED  -       0%      -       698.481   Ri     ON     
-u14   SINGLE    VERIFY-PAUSED  -       0%      -       698.481   Ri     ON     
+u0    SINGLE    VERIFYING      -       75%     -       2793.96   Ri     ON
+u1    SINGLE    VERIFYING      -       75%     -       2793.96   Ri     ON
+u2    SINGLE    VERIFYING      -       30%     -       2793.96   Ri     ON
+u3    SINGLE    VERIFYING      -       0%      -       2793.96   Ri     ON
+u4    SINGLE    VERIFY-PAUSED  -       0%      -       2793.96   Ri     ON
+u5    SINGLE    VERIFY-PAUSED  -       0%      -       698.481   Ri     ON
+u6    SINGLE    VERIFY-PAUSED  -       0%      -       2793.96   Ri     ON
+u7    SINGLE    VERIFY-PAUSED  -       0%      -       2793.96   Ri     ON
+u8    SINGLE    VERIFY-PAUSED  -       0%      -       698.481   Ri     ON
+u9    SINGLE    VERIFY-PAUSED  -       0%      -       698.481   Ri     ON
+u10   SINGLE    VERIFY-PAUSED  -       0%      -       2793.96   Ri     ON
+u11   SINGLE    VERIFY-PAUSED  -       0%      -       698.481   Ri     ON
+u12   SINGLE    VERIFY-PAUSED  -       0%      -       698.481   Ri     ON
+u13   SINGLE    VERIFY-PAUSED  -       0%      -       698.481   Ri     ON
+u14   SINGLE    VERIFY-PAUSED  -       0%      -       698.481   Ri     ON
 
 VPort Status         Unit Size      Type  Phy Encl-Slot    Model
 ------------------------------------------------------------------------------
@@ -235,20 +235,20 @@ p1    VERIFYING      u1   2.73 TB   SATA  1   -            WDC WD30EFRX-68EUZN0
 p2    VERIFYING      u2   2.73 TB   SATA  2   -            WDC WD30EFRX-68EUZN0
 p3    VERIFYING      u3   2.73 TB   SATA  3   -            WDC WD30EFRX-68EUZN0
 p4    VERIFYING      u4   2.73 TB   SATA  4   -            WDC WD30EFRX-68EUZN0
-p5    VERIFYING      u5   698.63 GB SATA  5   -            ST3750640NS         
+p5    VERIFYING      u5   698.63 GB SATA  5   -            ST3750640NS
 p6    VERIFYING      u6   2.73 TB   SATA  6   -            WDC WD30EFRX-68EUZN0
 p7    VERIFYING      u7   2.73 TB   SATA  7   -            WDC WD30EFRX-68EUZN0
-p9    VERIFYING      u8   698.63 GB SATA  9   -            ST3750640NS         
-p10   VERIFYING      u9   698.63 GB SATA  10  -            ST3750640NS         
+p9    VERIFYING      u8   698.63 GB SATA  9   -            ST3750640NS
+p10   VERIFYING      u9   698.63 GB SATA  10  -            ST3750640NS
 p11   VERIFYING      u10  2.73 TB   SATA  11  -            WDC WD30EFRX-68EUZN0
-p12   VERIFYING      u11  698.63 GB SATA  12  -            ST3750640NS         
-p13   VERIFYING      u12  698.63 GB SATA  13  -            ST3750640NS         
-p14   VERIFYING      u13  698.63 GB SATA  14  -            ST3750640NS         
-p15   VERIFYING      u14  698.63 GB SATA  15  -            ST3750640NS         
+p12   VERIFYING      u11  698.63 GB SATA  12  -            ST3750640NS
+p13   VERIFYING      u12  698.63 GB SATA  13  -            ST3750640NS
+p14   VERIFYING      u13  698.63 GB SATA  14  -            ST3750640NS
+p15   VERIFYING      u14  698.63 GB SATA  15  -            ST3750640NS
 
 Name  OnlineState  BBUReady  Status    Volt     Temp     Hours  LastCapTest
 ---------------------------------------------------------------------------
-bbu   On           Yes       OK        OK       OK       0      xx-xxx-xxxx  
+bbu   On           Yes       OK        OK       OK       0      xx-xxx-xxxx
 ```
 
 `VPort` tells you which hard drive bay a disk is in. `Unit` tells you under which SCSI number it is available in the system.
@@ -388,7 +388,7 @@ Old (not in used by stored in storage, we keep this information to know how to c
  * [10.20.32.27](http://10.20.32.27) - Network Room 1, fc:75:16:68:bb:99
  * [10.20.32.28](http://10.20.32.28) - W3SB, fc:75:16:68:b4:79
 
-We use Dlink Smart Console Utility to manage IP allocations of switches. Switches have web interface to manage their ports. The default gateway port is port 1 and DHCP traffic is only allowed through that port. To change this, edit the security settings in the switch's web configuration by going to security -> dhcp screening. 
+We use Dlink Smart Console Utility to manage IP allocations of switches. Switches have web interface to manage their ports. The default gateway port is port 1 and DHCP traffic is only allowed through that port. To change this, edit the security settings in the switch's web configuration by going to security -> dhcp screening.
 
 ## Mesh
 
