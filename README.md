@@ -53,10 +53,10 @@ Bandwidth limit is 100 Mbit/s.
 Device       | Internal IP        | External IP          | Hostname            | Hardware | Other
 -------------|--------------------|----------------------|---------------------|----------|-------
 `he-router`  |                    | 64.63.133.41         | he.cloyne.org       | [Mikrotik RouterBoard 2011UiAS-RM](http://routerboard.com/RB2011UiAS-RM) | Other IP: 64.62.214.118. Netmask: 255.255.255.248 (/29).
-`clo-router` | 10.20.32.1         | 64.62.133.42         | router.cloyne.org   | [Mikrotik RouterBoard 450G](http://routerboard.com/RB450G) | Netmask: 255.255.255.248 (/29). DHCP client range: 10.20.32.100 - 10.20.35.190 (859 addresses)
+`clo-router` | 10.20.32.1         | 64.62.133.42         | router.cloyne.org   | [Mikrotik RouterBoard 850Gx2](http://routerboard.com/RB850Gx2) | Netmask: 255.255.255.248 (/29). DHCP client range: 10.20.32.100 - 10.20.35.190 (859 addresses)
 `server1`    |                    | 64.62.133.43 (eth0)  | server1.cloyne.org  | 2-core Intel Atom processor and 4GB RAM. 64 GB SSD. | Secondary DNS server. Running Ubuntu LTS distribution as a host for [cloyne/powerdns-secondary](https://github.com/cloyne/docker-powerdns-secondary) Docker image.
-`server2`    | 10.20.32.10 (eth1) | 64.62.133.44 (eth0)  | server2.cloyne.org  | 2-core Intel Atom processor and 4GB RAM. Partitions: 64 GB SSD (sda) + 2x 1500 GB HDD (sdb and sdc) + 2x 500 GB HDD (sdd, sde).| Hosts  primary DNS server (using [cloyne/powerdns-master](https://github.com/cloyne/docker-powerdns-master) Docker image), Mail server, and Cloyne.org blog.
-`server3`    | 10.20.32.11 (p1p2) | 64.62.133.45 (p1p1)  | server3.cloyne.org  | contains 8 x 3 TB hard drives, 6 x 750 GB drives, configured in pairs into RAID-1, combined into a 13 TB LVM volume.
+`server2`    | 192.168.88.10 (eth1) | 64.62.133.44 (eth0)  | server2.cloyne.org  | 2-core Intel Atom processor and 4GB RAM. Partitions: 64 GB SSD (sda) + 2x 1500 GB HDD (sdb and sdc) + 2x 500 GB HDD (sdd, sde).| Hosts  primary DNS server (using [cloyne/powerdns-master](https://github.com/cloyne/docker-powerdns-master) Docker image), Mail server, and Cloyne.org blog.
+`server3`    | 192.168.88.11 (p1p2) | 64.62.133.45 (p1p1)  | server3.cloyne.org  | contains 8 x 3 TB hard drives, 6 x 750 GB drives, configured in pairs into RAID-1, combined into a 13 TB LVM volume.
 kingman      |                    | 64.62.133.46         | kingmanhall.org
 
 See also on our wiki:
@@ -91,7 +91,7 @@ Unused                    | 10.20.32.29 - 10.20.32.39 (10 IPs)          |       
 `c2c`        Access Point | [10.20.32.51](http://10.20.32.51)           | 04:18:d6:20:5f:e6 | C2C            | Ubiquiti UniFi AP Pro  | channel 1, 56
 `w1e`        Access Point | [10.20.32.52](http://10.20.32.52)           | 90:f6:52:ea:05:ec | W1E            | TP-LINK TL-WR1043ND    | channel 11
 `c3k`        Access Point | [10.20.32.53](http://10.20.32.53)           | 90:F6:52:2A:08:54 | C3K            | TP-LINK TL-WR1043ND    | channel 6
-Unused                    | 10.20.32.54 - 10.20.32.89 (36 IPs)        |                   |                |             |
+Unused                    | 10.20.32.54 - 10.20.32.89 (36 IPs)          |                   |                |             |
 printer1                  | [10.20.32.90](http://10.20.32.90)           |                   | Pool/Mail room | | [printer1.cloyne.org](printer1.cloyne.org) | TODO: add info for new printer Spring 2019
 label printer             | [10.20.32.91](http://10.20.32.91)           | 00:80:92:CF:09:B1 |                | Brother QL-710W
 Makerspace printer        | [10.20.32.92](http://10.20.32.92)           | 00:1E:8F:98:3B:1E | W0B            | Canon MX870 | [printer2.cloyne.org](printer2.cloyne.org)
