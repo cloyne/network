@@ -1,11 +1,11 @@
-New semester TODO list
-======================
+# New semester TODO list
 
-Facebook
---------
+## Facebook
 
 * Create a Facebook group, name `Cloyne SEASON 'XX`, where `SEASON` is one of `Fall`, `Spring`, `Summer`, and
 `XX` is year, like `Cloyne Summer '15`.
+* In settings, change the url to end with `cloyne.XXXXyy` where XXXX is the year
+    and yy is the season.
 * Share it on previous semester Facebook group so that people can join with a pinned message on top of the group. Invite those you know their Facbook account.
 * Allow joining only to members who live that semester in Cloyne.
 * Ask for the new cover photo for the new group.
@@ -14,10 +14,9 @@ Examples of past Facebook groups: [Cloyne Summer '15](https://www.facebook.com/g
 [Cloyne Spring '15](https://www.facebook.com/groups/765891660172376/),
 [Cloyne Fall '14](https://www.facebook.com/groups/628905887204288/)
 
-We also have an [alumni Facebook group](https://www.facebook.com/groups/545601288975216/).
+We also have an [alumni Facebook group](https://www.facebook.com/groups/CloyneAlumni/).
 
-Mailing lists
--------------
+## Mailing lists
 
 For mailing list we use [Sympa](http://sympa.org/) installed at [http://cloyne.org/lists/](http://cloyne.org/lists/).
 Tasks at the beginning of the semester are:
@@ -27,39 +26,68 @@ year and season, like `clones.2014f@cloyne.org`, `clones.2015s@cloyne.org` or `c
 * Create new `clones@cloyne.org` mailing list and add current members.
 * Update `alumni@cloyne.org` mailing list to include the new `clones.XXX@cloyne.org` mailing list as data source.
 
-Detailed steps:
+### Detailed steps:
 * Prepare a list of current members e-mail addresses in the format `EMAIL NAME` with each entry in the separate line.
-So e-mail address is separated from name with a space, and each e-mail address is in its own line. A bit of copy-pasting
-and regular expressions can help you with that. **Make sure there are no commas in names.** (This can confuse a CSV file later on.) Add the line `matthew@bsc.coop Matthew` to the end of the list.
+So e-mail address is separated from name with a space, and each e-mail address is in its own line.
+See the house list google doc for spreadsheet magic, or use regular expressions.
+**Make sure there are no commas in names.** (This can confuse a CSV file later on.)
+Add the facilities manager's email and name to the end of the list.
 * Login with `clonm@bsc.coop` account [http://cloyne.org/lists/](http://cloyne.org/lists/).
+
+#### Update announce:
 * Open [http://cloyne.org/lists/review/announce](http://cloyne.org/lists/review/announce).
-* Remove all subscribers by clicking on "Toggle selection" at the end of the page to select all, check "Quiet",
+* Copy the current list to the "Sympa dump" page of the house list spreadsheet,
+    and extract the names/emails to use in the "Diff Worksheet" page. This is
+    necessary to ensure that people who've changed what email they use for
+    cloyne, have that preference carry over to the new semester.
+* Back in Sympa, remove all subscribers by clicking on "Toggle selection" at the end of the page to select all, check "Quiet",
 and then click on "Delete selected email addresses".
 * Open [http://cloyne.org/lists/add_request/announce](http://cloyne.org/lists/add_request/announce).
 * Paste in all addresses, check "Quiet", and click on "Add subscribers".
+
+`from-central` mailing list is automatically updated based on the subscribers from `announce` mailing list.
+
+#### Archive clones:
 * Open [http://cloyne.org/lists/admin/clones](http://cloyne.org/lists/admin/clones).
-* Click "Rename list" and the new `clones.XXX@cloyne.org` name.
+* Click through to lists including clones. For each list that includes clones as
+    a data source, click through and remove it as a data source temporarily
+    (click on "Data sources configuration" and then scroll to "list inclusion" and delete "clones",
+    then scroll to the bottom and click "Update").
+    Keep the tabs open so you can re-add it after you've done the renaming.
+* Go back to the [admin page](http://cloyne.org/lists/admin/clones). Click "Rename list" and the new `clones.XXX@cloyne.org` name.
+
+#### Set up new clones list quickly!
 * Open [http://cloyne.org/lists/create_list_request](http://cloyne.org/lists/create_list_request).
 * Choose to copy `clones.XXX@cloyne.org` mailing list as `clones@cloyne.org`. We are preparing now the new mailing
 list. This copies the configuration, but not subscribers.
-* Open [http://cloyne.org/lists/add_request/clones](http://cloyne.org/lists/add_request/clones).
-* Paste in all addresses, check "Quiet", and click on "Add subscribers".
 * Add `cloyne.cloaca@gmail.com` e-mail address to the mailng list, but only for sending. After adding it, find it again, [open its details](http://cloyne.org/lists/editsubscriber/clones/cloyne.cloaca@gmail.com/review), and set `Receiving` to `no mail`.
+* Re-add clones to any lists (at minimum, `with-central`) that it was a data
+    source for. Make sure to add/remove cloyne.cloaca and/or bsc.coop addresses
+    as appropriate.
+
+#### Finish setting up last semester's list
 * Open the "List definition" admin page of the new `clones.XXX@cloyne.org` mailing list, for example for
 `clones.2015s@cloyne.org` open `http://cloyne.org/lists/edit_list_request/clones.2015s/description`.
 * Change subject "Cloyne discussion mailing list" (which is subject for `clones@cloyne.org` mailing list) to
-`Cloyne YEAR SEASON discussion mailing list`, like `Cloyne 2015 spring discussion mailing list`. Click "Update" at the
-end of the page.
+`Cloyne YEAR SEASON discussion mailing list`, like `Cloyne 2015 spring discussion mailing list`, and change
+"Topics" to "Alumni and returning clones". Click "Update" at the end of the page.
+* Go to data sources setup and delete announce.
+* Open the subscribers list, remove all members, and paste in the backup list
+    you saved earlier. This is necessary because otherwise it will auto-update
+    from the new announce list.
+
+#### Update the alumni list
 * Open [http://cloyne.org/lists/edit_list_request/alumni/data_source](http://cloyne.org/lists/edit_list_request/alumni/data_source).
 * Add to "List inclusion" the new `clones.XXX` mailing list inclusion. For example, `clones.2015s`.
 Click "Update" at the end of the page.
 
-`from-central` mailing list is automatically updated based on the subscribers from `announce` mailing list.
+## Wordpress
 
-Wordpress
----------
+* [Using this script](https://github.com/cloyne/docker-blog/blob/master/users-csv.py) you can create a CSV file from a list of e-mail addresses and names, the same as used for mailing lists.
+```bash
+./users-csv.py < list > out.csv
+```
 
-* [Using this script](https://github.com/cloyne/docker-blog/blob/master/users-csv.py) you can create a CSV file from a list of e-mail addresses and names, the same as used for mailing lists. ```./users-csv.py < list > out.csv```
 * All users in the CSV file will be created with `author` permission which allows them to post blog posts, events,
 upload media content, but does not allow them to change content of others.
 * Open [http://cloyne.org/wp-admin/users.php?page=import-users-from-csv](http://cloyne.org/wp-admin/users.php?page=import-users-from-csv).
@@ -68,103 +96,73 @@ upload media content, but does not allow them to change content of others.
 It might happen that the site time-outs after the import. This is normal. New users will be imported and e-mail
 notification will be send to them inviting them to set the password.
 
-Notifying members
------------------
+## Notifying members
 
 After all of the above was done, you should send a message to members informing them what is available to them and
 how to use it.
 
-The `announce@cloyne.org` e-mail template:
+### The `announce@cloyne.org` e-mail template:
 
-```
-Welcome to Cloyne from your network manager. I configured our mailing
-lists for the new period. For those who are new to Cloyne, here are few
-instructions on how to navigate the digital Cloynosphere.
+Welcome to Cloyne from your network coordinator! I've updated the mailing lists for the new contract period. We have three main lists to which everyone is subscribed initially:
 
-We have three main mailing lists to which you are all subscribed initially:
+  * announce@cloyne.org - managers will use this to send announcements to all house members.
+  * clones@cloyne.org - discussion mailing list for all of us to keep virtual flow of information going, any discussion goes, but remember that the whole house is subscribed to this mailing list (if needed, feel free to request a dedicated mailing list for your project, group, team, interests, etc., so that members can subscribe to those they are interested in)
+  * from-central@cloyne.org - similar to announce, just that for information from the central level we are forwarding to the house
 
-announce@cloyne.org - to which managers will be sending important
-information to all of us, any discussion direct to:
-
-clones@cloyne.org - discussion mailing list for all of us to keep
-virtual flow of information going, any discussion goes, but remember
-that the whole house is subscribed to this mailing list (if needed,
-feel free to request a dedicated mailing list for your project, group,
-team, interests, etc., so that members can subscribe to those they are
-interested in)
-
-from-central@cloyne.org - similar to announce, just that for information
-from the central level we are forwarding to the house
-
-If you want to change the e-mail address you are subscribed to mailing
-lists with, you can do that by visiting:
-
-http://cloyne.org/lists/firstpasswd/
-
-And after you login, visit your account preferences and change your
-e-mail address:
-
+If you want to change your e-mail address you are subscribed to mailing lists with, you can do that by visiting:
+http://cloyne.org/lists/firstpasswd/. After you login, visit your account preferences and change your e-mail address:
 http://cloyne.org/lists/pref
 
-We also have a collective "Cloyne Cloaca" Gmail e-mail account which is
-mainly used to send announcements from kitchen to the mailing list.
-Because it can be used by anyone, anonymously, it can also be misused.
-Do not trust everything coming from it.
+We also have a collective "Cloyne Cloaca" email account which is mainly used to send announcements from the kitchen.  Because it can be used by anyone, anonymously, it can also be misused.  Do not trust everything coming from it.
 
-We have a website (http://cloyne.org/). And we have also a calendar
-of events on the website. All of you should receive an e-mail
-with your username and temporary password for the website. With it
-you can login to the website:
+I strongly recommend setting up filters to keep your mailing lists manageable - especially separating [cloann] from [clones]. If you prefer to keep all of your email in one place, you can also mute individual conversations to make a particular thread stop showing up in your inbox every time someone replies to it. I recommend the following settings:
 
-http://cloyne.org/wp-login.php
+  * for the announce mailing list, create a label and filter it under that label, but don't select "skip the inbox"
+  * for clones and other mailing lists, either:
+      * use mute feature to mute conversations you are not interested in, or
+      * create a label and filter for it and set that it skips the inbox and is automatically archived, and then only check that label when you want to see what's happening on [clones].
 
-You can add blog posts, add events to the calendar, and upload
-photos and videos to our media library. The site is yours. Enjoy it.
+Stay tuned for more exciting emails about (y)our collective network resources, including: our website/blog, our file server, our google calendar, and workshift opportunities!
+In solidarity,
 
-If you prefer Facebook, we also have a Facebook group:
+### The `clones.XXX@cloyne.org` e-mail template:
 
-https://www.facebook.com/groups/1479825148929634/
+The clones@cloyne.org mailing list has been renamed to clones.2019f@cloyne.org
+with all the members from 2019 Fall kept there.
 
-We also have a file server where you can share files with your
-fellow members:
+The new clones@cloyne.org mailing list has only the spring members on it.
 
-https://files.cloyne.org
+There is also an alumni@cloyne.org mailing list, which is a superset of all
+clones.*@cloyne.org mailing lists, so all past members of Cloyne since 2014.
 
-If anyone is interested in helping doing computer, network, programming,
-and similar stuff for workshift, tell me and let's hack together. :-)
-```
-
-The `clones.XXX@cloyne.org` e-mail template:
-
-```
-The clones@cloyne.org mailing list has been renamed to
-clones.XXX@cloyne.org with all the members from YEAR OLD_SEASON kept there.
-
-The new clones@cloyne.org mailing list has only the NEW_SEASON members on it.
-
-There is also a alumni@cloyne.org mailing list, which is a superset of
-all clones.*@cloyne.org mailing lists, so all past members of Cloyne.
-
-Feel free to use them. Feel free to unsubscribe. Feel free to change the
-e-mail address with which you are subscribed to one which will last
-(not @berkeley address). You can do that by visiting:
+Feel free to use them. Feel free to unsubscribe. Feel free to change the e-mail
+address with which you are subscribed. You can do that by visiting:
 
 http://cloyne.org/lists/firstpasswd/
 
-And after you login, visit your account preferences and change your
-e-mail address:
+And after you login, visit your account preferences and change your e-mail
+address:
 
 http://cloyne.org/lists/pref
 
 We also have an alumni Facebook group. Feel free to join it:
 
-https://www.facebook.com/groups/545601288975216/
-```
+https://www.facebook.com/groups/CloyneAlumni
 
-What is hackerspace:
+Cheers,
+
+Note: If you just want to unsubscribe, the fastest way is to send an email to
+sympa@cloyne.org with the subject "SIGNOFF clones.2019f" for just this list, or
+"SIGNOFF *" for all lists.
+
+### What is makerspace:
+
+Note: the makerspace now has its own coordinator position. This template is from
+when it was called the hackerspace. It's preserved here for historical
+purposes.
 
 ```
-What hackerspace is. In short, it is a space where you can work on your
+What makerspace is. In short, it is a space where you can work on your
 projects, be creative. Hacking here means in some way taking things
 apart, learning how they work, building things from other stuff, often
 stuff which had originally some other purpose. And it does not have to
@@ -191,13 +189,11 @@ http://cloyne.org/2014/09/report-soldering-with-mitch-altman/
 So, space is for you and your creativity!
 ```
 
-Instructions
-============
+# Instructions
 
 Later on you should send few e-mails with various instructions.
 
-`Adding events to your Google Calendar` template
-------------------------------------------------
+## `Adding events to your Google Calendar` template
 
 ```
 If you want, you can add events from cloyne.org website to your Google
@@ -212,13 +208,11 @@ Events Using Google Calendar":
 http://wp-events-plugin.com/documentation/event-ical-feeds/
 ```
 
-`How to use Gmail for mailing lists` template
----------------------------------------------
+## `How to use Gmail for mailing lists` template
 
 ```
 Do you feel overwhelmed with all the e-mails coming your way over our
-mailing lists? Are you using Gmail? Worry not, there are some easy
-tricks to empower you and get you in charge of which discussions you
+mailing lists? Are you using Gmail? Worry not, there are some easy tricks to empower you and get you in charge of which discussions you
 want to read and which to ignore.
 
 There are two ways of dealing with mailing list:
@@ -251,8 +245,7 @@ inbox and is automatically archived
 If you have any questions about any of this, feel free to ask.
 ```
 
-`Everyone can post to our blog and create events` template
-----------------------------------------------------------
+## `Everyone can post to our blog and create events` template
 
 ```
 Short reminder that if anyone would like to post to a blog at
@@ -283,8 +276,8 @@ that something is happening, and you also clearly show that the space
 will be in use.
 ```
 
-`Scanning and printing` template
---------------------------------
+## `Scanning and printing` template
+TODO. this is out of date.
 
 ```
 We have a house scanner and printer. Printing operates on karma box
