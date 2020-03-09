@@ -91,6 +91,7 @@ Unused                    | 10.20.32.29 - 10.20.32.39 (10 IPs)          |       
 `c2c`        Access Point | [10.20.32.51](http://10.20.32.51)           | 04:18:d6:20:5f:e6 | C2C            | Ubiquiti UniFi AP Pro  | channel 1, 56
 `w1e`        Access Point | [10.20.32.52](http://10.20.32.52)           | 90:f6:52:ea:05:ec | W1E            | TP-LINK TL-WR1043ND    | channel 11
 `c3k`        Access Point | [10.20.32.53](http://10.20.32.53)           | 90:F6:52:2A:08:54 | C3K            | TP-LINK TL-WR1043ND    | channel 6
+`e3j`        Access Point | [10.20.32.54](http://10.20.32.54)           | 04:18:d6:20:5d:20 | E3J            | Ubiquiti UniFi AP Pro | channel 11, channel 36
 Unused                    | 10.20.32.54 - 10.20.32.89 (36 IPs)          |                   |                |             |
 printer1                  | [10.20.32.90](http://10.20.32.90)           |                   | Pool/Mail room | | [printer1.cloyne.org](printer1.cloyne.org) | TODO: add info for new printer Spring 2019
 label printer             | [10.20.32.91](http://10.20.32.91)           | 00:80:92:CF:09:B1 |                | Brother QL-710W
@@ -117,5 +118,4 @@ Old (not in used by stored in storage, we keep this information to know how to c
 
  * [192.168.0.42](http://192.168.0.42) - C2K, a0:f3:c1:ff:2a:94, TP-Link, channel 11
  * [192.168.0.43](http://192.168.0.43) - FamilyRoom, a0:f3:c1:ff:14:70,  TP-Link, channel 11
- * [192.168.0.46](http://192.168.0.46) - E3J, 04:18:d6:20:5d:20, Ubiquiti UniFi AP Pro, channel 6
  * [192.168.0.59](http://192.168.0.59) - QuietStudyRoom, c0:4a:00:40:e4:4d, TP-Link, channel 11
