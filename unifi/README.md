@@ -42,15 +42,24 @@ config interface 'lan'
 	option force_link '1'
 	option type 'bridge'
 	option proto 'static'
-	option ipaddr '10.20.8.XXX'
-	option netmask '255.255.252.0'
-	option gateway '10.20.8.1'
+	option ipaddr '10.20.32.XXX'
+	option netmask '255.255.248.0'
+	option gateway '10.20.32.1'
 	option ip6assign '60'
 ```
 
-Set `ipaddr` to the real IP address of the device.
+Set `ipaddr` to the real IP address of the device:
 
-Set `/etc/config/wireless` file to (check if file originally looks simlarly, like `path`s should be the same) by doing:
+```
+ip addr show
+```
+to see what it is to begin with, then, e.g.,
+
+```
+ip addr add 10.20.32.XXX/21 brd 10.20.39.255 dev br-lan
+```
+
+Set `/etc/config/wireless` file to (check if file originally looks simlar using `cat /etc/config/wireless` - ensure that the `path`s are the same). If it's not correct, replace it by doing:
 
 ```
 cat > /etc/config/wireless
@@ -68,12 +77,13 @@ config wifi-device  radio0
 	#option require_mode n
 	option txpower 17
 	#option basic_rate '6000'
+	option disabled 0
 
 config wifi-iface
 	option device   radio0
 	option network  lan
 	option mode     ap
-	option ssid     Cloyne
+	option ssid     BSC
 	option encryption 'psk2'
 	option key	'XXX'
 
@@ -91,12 +101,12 @@ config wifi-iface
 	option device   radio1
 	option network  lan
 	option mode     ap
-	option ssid     Cloyne
+	option ssid     BSCSlow
 	option encryption 'psk2'
 	option key	'XXX'
 ```
 
-Edit the `/etc/config/wireless` and set the WiFi password.
+Edit the `/etc/config/wireless` and set the WiFi password. You may also want to change the broadcast channels, see the Cloyne network diagram for a map of which access points broadcast on which channels.
 
 Create `/etc/hotplug.d/iface/30-bitrates` by doing:
 
