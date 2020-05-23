@@ -20,10 +20,10 @@ We also have an [alumni Facebook group](https://www.facebook.com/groups/CloyneAl
 
 For mailing list we use [Sympa](http://sympa.org/) installed at [http://cloyne.org/lists/](http://cloyne.org/lists/).
 Tasks at the beginning of the semester are:
-* Remove old members from `announce@cloyne.org` mailing list and add current members.
-* Rename current `clones@cloyne.org` mailing list to `clones.XXX@cloyne.org` mailing list, where `XXX` consist of a
+* Copy current `clones@cloyne.org` mailing list to `clones.XXX@cloyne.org` mailing list, where `XXX` consist of a
 year and season, like `clones.2014f@cloyne.org`, `clones.2015s@cloyne.org` or `clones.2015su@cloyne.org` (for summer).
-* Create new `clones@cloyne.org` mailing list and add current members.
+* Remove old members from `announce@cloyne.org` mailing list and add current members.
+* Update `clones@cloyne.org` mailing list to add current members.
 * Update `alumni@cloyne.org` mailing list to include the new `clones.XXX@cloyne.org` mailing list as data source.
 
 ### Detailed steps:
@@ -34,12 +34,25 @@ See the house list google doc for spreadsheet magic, or use regular expressions.
 Add the facilities manager's email and name to the end of the list.
 * Login with `clonm@bsc.coop` account [http://cloyne.org/lists/](http://cloyne.org/lists/).
 
+#### Archive clones:
+* Open [http://cloyne.org/lists/create_list_request](http://cloyne.org/lists/create_list_request).
+* Choose to copy `clones@cloyne.org` mailing list as `clones.XXX@cloyne.org`. We are preparing now the archived mailing
+list. This copies the configuration, including auto-populating the subscriber list from announce.
+* Open the "List definition" admin page of the new `clones.XXX@cloyne.org` mailing list, for example for
+`clones.2015s@cloyne.org` open `http://cloyne.org/lists/edit_list_request/clones.2015s/description`.
+    * Change subject "Cloyne discussion mailing list" (which is subject for `clones@cloyne.org` mailing list) to
+`Cloyne YEAR SEASON discussion mailing list`, like `Cloyne 2015 spring discussion mailing list`
+    * Change "visibility" to "conceal except for subscribers".
+    * Scroll down and change "Topics" to "Alumni and returning clones".
+    * Click "Update" at the end of the page.
+* Go to Edit list config -> data sources setup, check the "delete" box next to the announce@cloyne.org entry, and click update. This will freeze the list membership.
+
 #### Update announce:
 * Open [http://cloyne.org/lists/review/announce](http://cloyne.org/lists/review/announce).
-* Copy the current list to the "Sympa dump" page of the house list spreadsheet,
+* Copy the current house list to the "Sympa dump" page of the house list spreadsheet,
     and extract the names/emails to use in the "Diff Worksheet" page. This is
     necessary to ensure that people who've changed what email they use for
-    cloyne, have that preference carry over to the new semester.
+    Cloyne, have that preference carry over to the new semester.
 * Back in Sympa, remove all subscribers by clicking on "Toggle selection" at the end of the page to select all, check "Quiet",
 and then click on "Delete selected email addresses".
 * Open [http://cloyne.org/lists/add_request/announce](http://cloyne.org/lists/add_request/announce).
@@ -47,34 +60,9 @@ and then click on "Delete selected email addresses".
 
 `from-central` mailing list is automatically updated based on the subscribers from `announce` mailing list.
 
-#### Archive clones:
-* Open [http://cloyne.org/lists/admin/clones](http://cloyne.org/lists/admin/clones).
-* Click through to lists including clones. For each list that includes clones as
-    a data source, click through and remove it as a data source temporarily
-    (click on "Data sources configuration" and then scroll to "list inclusion" and delete "clones",
-    then scroll to the bottom and click "Update").
-    Keep the tabs open so you can re-add it after you've done the renaming.
-* Go back to the [admin page](http://cloyne.org/lists/admin/clones). Click "Rename list" and the new `clones.XXX@cloyne.org` name.
-
-#### Set up new clones list quickly!
-* Open [http://cloyne.org/lists/create_list_request](http://cloyne.org/lists/create_list_request).
-* Choose to copy `clones.XXX@cloyne.org` mailing list as `clones@cloyne.org`. We are preparing now the new mailing
-list. This copies the configuration, but not subscribers.
-* Add `cloyne.cloaca@gmail.com` e-mail address to the mailng list, but only for sending. After adding it, find it again, [open its details](http://cloyne.org/lists/editsubscriber/clones/cloyne.cloaca@gmail.com/review), and set `Receiving` to `no mail`.
-* Re-add clones to any lists (at minimum, `with-central`) that it was a data
-    source for. Make sure to add/remove cloyne.cloaca and/or bsc.coop addresses
-    as appropriate.
-
-#### Finish setting up last semester's list
-* Open the "List definition" admin page of the new `clones.XXX@cloyne.org` mailing list, for example for
-`clones.2015s@cloyne.org` open `http://cloyne.org/lists/edit_list_request/clones.2015s/description`.
-* Change subject "Cloyne discussion mailing list" (which is subject for `clones@cloyne.org` mailing list) to
-`Cloyne YEAR SEASON discussion mailing list`, like `Cloyne 2015 spring discussion mailing list`, and change
-"Topics" to "Alumni and returning clones". Click "Update" at the end of the page.
-* Go to data sources setup and delete announce.
-* Open the subscribers list, remove all members, and paste in the backup list
-    you saved earlier. This is necessary because otherwise it will auto-update
-    from the new announce list.
+#### Set up new clones list
+* Go to https://cloyne.org/lists/review/clones
+* Click "Synchronize Data Sources"
 
 #### Update the alumni list
 * Open [http://cloyne.org/lists/edit_list_request/alumni/data_source](http://cloyne.org/lists/edit_list_request/alumni/data_source).
