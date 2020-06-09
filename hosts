@@ -25,6 +25,7 @@
 10.20.32.51 c2c        #, 04:18:d6:20:5f:e6, Ubiquiti UniFi AP Pro, channel 1, 56
 10.20.32.52 w1e        #, 90:f6:52:ea:05:ec, TP-LINK TL-WR1043ND, channel 11
 10.20.32.53 c3k        #, 90:F6:52:2A:08:54, TP-LINK TL-WR1043ND, channel 6
+10.20.32.54 e3j        #, 04:18:d6:20:5d:20, Ubiquiti UniFi AP Pro, channel 1, 36
 # Cloyne Switches
 10.20.32.20 turing2  # Network Room 2, fc:75:16:68:b4:49
 10.20.32.21 c2k      #, 14:d6:4d:1e:4:16
