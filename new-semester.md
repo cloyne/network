@@ -84,6 +84,9 @@ upload media content, but does not allow them to change content of others.
 It might happen that the site time-outs after the import. This is normal. New users will be imported and e-mail
 notification will be send to them inviting them to set the password.
 
+## RocketChat
+Refer to [this](https://github.com/cloyne/docker-rocketchat/wiki/Prepare-Rocket.Chat-for-a-New-Semester). 
+
 ## Notifying members
 
 After all of the above was done, you should send a message to members informing them what is available to them and
