@@ -1,5 +1,36 @@
 # New semester TODO list
 
+## Current House List Google Sheet
+
+We use [this Google Sheet](https://docs.google.com/spreadsheets/d/1Bm_qpASyb6iXwqws_vf6wV0R1byJ-L-AeyVmPRTrVqE/edit#gid=2080866884) to update the house list with the spreadsheets we get from central.
+
+### Diff Worksheet
+First, we make sure to preserve any changes people have made to the email they use for Cloyne:
+
+1. Copy the list of subscribers from the [announce list on sympa](http://cloyne.org/lists/review/announce)
+2. Paste it into the `Sympa Dump` tab in the Google Sheet
+3. Now the `Sympa Dump` sheet has a column with everybody's current emails and everybody's names. Copy each of these columns to overwrite the orange columns ("old house list") on the `Diff Worksheet` tab of the Google Sheet.
+4. Clear the white columns under the blue heading to make room for the new houselist. *Do not modify the light blue columns* unless you know what you're doing (i.e., the formulas are broken). Paste in the names and emails from central. The light blue columns should autopopulate
+5. For any returning members whose names are missing on Sympa, copy the correctly formatted name into the blank cell in the sympa name column.
+6. Copy the emails to the column to the right of all the colored columns, and change any emails that are different on the central list to match the Cloyne version.
+7. Copy the names column to the next column to the right of the new email column.
+8. Re-add any coordinator accounts who had signed up for announce but are not on the house list - including the facilities manager and anyone else who shows up in the old sympa list.
+
+This is the list we will use for updating Sympa, below.
+
+### RocketChat Worksheet
+In the `Rocketchat` tab on the Google Sheet:
+
+1. Copy the names into the first few columns from the `Diff Worksheet`
+2. Log into [chat.cloyne.org](chat.cloyne.org), go to three dot menu -> admnistration -> users, and copy the table of users. You may have to page through.
+3. Paste that table into the middle section of the `Rocketchat` tab in the Google sheet, overwriting the existing contents. Make sure to delete any extra residual rows if there are fewer users this term.
+4. Spot check th last columns to make sure usernames generated properly.
+5. If available, paste the list of coordinator emails into the `Coords` sheet
+
+## RocketChat
+
+Using the generated lins from the rocketchat worksheet (above), follow the directions [here](https://github.com/cloyne/docker-rocketchat/wiki/Prepare-Rocket.Chat-for-a-New-Semester) to update RocketChat. 
+
 ## Facebook
 
 * Create a Facebook group, name `Cloyne SEASON 'XX`, where `SEASON` is one of `Fall`, `Spring`, `Summer`, and
@@ -85,9 +116,6 @@ upload media content, but does not allow them to change content of others.
 
 It might happen that the site time-outs after the import. This is normal. New users will be imported and e-mail
 notification will be send to them inviting them to set the password.
-
-## RocketChat
-Refer to [this](https://github.com/cloyne/docker-rocketchat/wiki/Prepare-Rocket.Chat-for-a-New-Semester). 
 
 ## Notifying members
 
