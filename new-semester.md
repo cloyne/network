@@ -40,7 +40,8 @@ Add the facilities manager's email and name to the end of the list.
 list. This copies the configuration, including auto-populating the subscriber list from announce.
 * Open the "List definition" admin page of the new `clones.XXX@cloyne.org` mailing list, for example for
 `clones.2015s@cloyne.org` open `http://cloyne.org/lists/edit_list_request/clones.2015s/description`.
-    * Click on the "Synchronize members with data sources" button.
+    * Click on the "Synchronize members with data sources" button for the copied list.
+    * Hover over "Edit List Config" and click on "Data sources setup." Find the lists section, select all lists listed there, and check their "delete" boxes. Hit update at the very bottom of the page.
     * Change subject "Cloyne discussion mailing list" (which is subject for `clones@cloyne.org` mailing list) to
 `Cloyne YEAR SEASON discussion mailing list`, like `Cloyne 2015 spring discussion mailing list`
     * Change "visibility" to "conceal except for subscribers".
