@@ -15,8 +15,7 @@ For in depth documentation, check out:
     * Mesh
     * Kingman
     * Other
-* [Printer](https://github.com/cloyne/network/wiki/Printer) - currently just
-    contains outdated information but hopefully clohard will update it soon :)
+* [Printer](https://github.com/cloyne/network/wiki/Cloyne's-Setup:-Printer)
 
 Documentation of our [Web Apps](http://github.com/cloyne/servers/wiki) has been relocated to the
     [cloyne/servers](http://github.com/cloyne/servers) repository's wiki.
