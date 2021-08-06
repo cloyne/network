@@ -82,7 +82,7 @@ Unused                    | 10.20.32.29 - 10.20.32.39 (10 IPs)          |       
 `w2c`        Access Point | [10.20.32.43](http://10.20.32.43)           | 04:18:d6:20:5c:fe | W2C            | Ubiquiti UniFi AP Pro  | channel 6, 124
 `w3a`        Access Point | [10.20.32.44](http://10.20.32.44)           | c0:4a:00:5d:c3:f3 | W3A            | TP-LINK TL-WR1043ND v2 | channel 1
 `w0b`        Access Point | [10.20.32.45](http://10.20.32.45)           | c0:4a:00:40:e3:61 | W0B            | TP-LINK TL-WR1043ND v2 | channel 1
-`e3ab`       Access Point | [10.20.32.46](http://10.20.32.46)           | e8:94:f6:68:84:78 | E3AB           | TP-LINK TL-WR1043ND v2 | channel 1
+`e3ab`       Access Point | [10.20.32.46](http://10.20.32.46)           | 24:a4:3c:02:14:4b | E3AB           | Ubiquiti UniFi AP Pro  | channel 1
 `GreatHall`  Access Point | [10.20.32.47](http://10.20.32.47)           | 04:18:d6:20:59:c8 | Dining Room    | Ubiquiti UniFi AP Pro  | channel 1, 116
 `e2d`        Access Point | [10.20.32.48](http://10.20.32.48)           | 04:18:d6:20:5a:1f | E2D            | Ubiquiti UniFi AP Pro  | channel 11, 108
 `w2h`        Access Point | [10.20.32.49](http://10.20.32.49)           | 04:18:d6:20:59:c7 | W2H            | Ubiquiti UniFi AP Pro  | channel 1, 100
