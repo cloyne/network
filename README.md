@@ -18,45 +18,29 @@ For in depth documentation, check out:
 * [Printer](https://github.com/cloyne/network/wiki/Cloyne's-Setup:-Printer)
 
 Documentation of our [Web Apps](http://github.com/cloyne/servers/wiki) has been relocated to the
-    [cloyne/servers](http://github.com/cloyne/servers) repository's wiki.
-    * Sympa (cloyne.org/lists)
-    * Cloyne Blog (cloyne.org)
+[cloyne/servers](http://github.com/cloyne/servers) repository's wiki.
+
+* Sympa (cloyne.org/lists)
+* Cloyne Blog (cloyne.org)
 
 ## [Internet uplink](https://github.com/cloyne/network/wiki/Internet-Uplink-and-LAN)
 
-Through [Hurricane Electric](https://he.net/).
+Through [Sonic](https://sonic.net/).
 
-    64.62.133.40/29
-    Network:              64.62.133.40
-    Netmask:              255.255.255.248
-    Broadcast:            64.62.133.47
-    DNS:                  216.218.196.2
-    Usable address range: 64.62.133.41 - 64.62.133.46 (6 addresses)
+    Public IP:            Dynamic
+    DNS (IPv4):           50.0.1.1 or 50.0.2.2
+    DNS (IPv6):           2001:5a8::11 or 2001:5a8::33
 
-    2001:470:104::/48
-    Network:              2001:470:104::
-    DNS:                  2001:470:0:473::473
-
-    64.62.214.116/30 (point to point connection)
-    HE:                   64.62.214.117
-    Cloyne:               64.62.214.118
-
-    2001:470:1:1c5::/126 (point to point connection)
-    HE:                   2001:470:1:1c5::1
-    Cloyne:               2001:470:1:1c5::2
-
-Bandwidth limit is 100 Mbit/s.
+Bandwidth limit is 1 Gbit/s.
 
 ## Static IPv4 addresses at a glance:
 
-Device       | Internal IP        | External IP          | Hostname            | Hardware | Other
--------------|--------------------|----------------------|---------------------|----------|-------
-`he-router`  |                    | 64.63.133.41         | he.cloyne.org       | [Mikrotik RouterBoard 2011UiAS-RM](http://routerboard.com/RB2011UiAS-RM) | Other IP: 64.62.214.118. Netmask: 255.255.255.248 (/29).
-`clo-router` | 10.20.32.1         | 64.62.133.42         | router.cloyne.org   | [Mikrotik RouterBoard 850Gx2](http://routerboard.com/RB850Gx2) | Netmask: 255.255.255.248 (/29). DHCP client range: 10.20.32.100 - 10.20.35.190 (859 addresses)
-`server1`    |                    | 64.62.133.43 (eth0)  | server1.cloyne.org  | 2-core Intel Atom processor and 4GB RAM. 64 GB SSD. | Secondary DNS server. Running Ubuntu LTS distribution as a host for [cloyne/powerdns-secondary](https://github.com/cloyne/docker-powerdns-secondary) Docker image.
-`server2`    | 192.168.88.10 (eth1) | 64.62.133.44 (eth0)  | server2.cloyne.org  | 2-core Intel Atom processor and 4GB RAM. Partitions: 64 GB SSD (sda) + 2x 1500 GB HDD (sdb and sdc) + 2x 500 GB HDD (sdd, sde).| Hosts  primary DNS server (using [cloyne/powerdns-master](https://github.com/cloyne/docker-powerdns-master) Docker image), Mail server, and Cloyne.org blog.
-`server3`    | 192.168.88.11 (p1p2) | 64.62.133.45 (p1p1)  | server3.cloyne.org  | contains 8 x 3 TB hard drives, 6 x 750 GB drives, configured in pairs into RAID-1, combined into a 13 TB LVM volume.
-kingman      |                    | 64.62.133.46         | kingmanhall.org
+Device       | Cloyne subnet IP   | Server subnet IP      | Ports (on dynamic IP)    |  Hostname                | Hardware | Other
+-------------|--------------------|-----------------------|--------------------------|--------------------------|----------|-------
+`clo-router` | 10.20.32.1 (ether2)| 192.168.88.1 (ether3) | 8080 for web, 22 for ssh | http://router.cloyne.org | [Mikrotik RouterBoard 850Gx2](http://routerboard.com/RB850Gx2) | Netmask: 255.255.252.0 (/22). DHCP client range: 10.20.32.100 - 10.20.35.190 (859 addresses)
+`server1`    | Unassigned         | 192.168.88.11 (eth0)  | 2021 for ssh             | server1.cloyne.org  | 2-core Intel Atom processor and 4GB RAM. 64 GB SSD. | Secondary DNS server. Running Ubuntu LTS distribution as a host for [cloyne/powerdns-secondary](https://github.com/cloyne/docker-powerdns-secondary) Docker image.
+`server2`    | Unassigned         | 192.168.88.12 (eth1)  | 80/443 for web, 2022 for ssh | server2.cloyne.org  | 2-core Intel Atom processor and 4GB RAM. Partitions: 64 GB SSD (sda) + 2x 1500 GB HDD (sdb and sdc) + 2x 500 GB HDD (sdd, sde).| Hosts  primary DNS server (using [cloyne/powerdns-master](https://github.com/cloyne/docker-powerdns-master) Docker image), Mail server, and Cloyne.org blog.
+`server3`    | Unassigned         | 192.168.88.13 (p1p1) | 2023 for ssh             | server3.cloyne.org  | contains 8 x 3 TB hard drives, 6 x 750 GB drives, configured in pairs into RAID-1, combined into a 13 TB LVM volume.
 
 See also on our wiki:
 * [Internet uplink and LAN](https://github.com/cloyne/network/wiki/Internet-Uplink-and-LAN)
@@ -118,3 +102,4 @@ Old (not in used by stored in storage, we keep this information to know how to c
  * [192.168.0.42](http://192.168.0.42) - C2K, a0:f3:c1:ff:2a:94, TP-Link, channel 11
  * [192.168.0.43](http://192.168.0.43) - FamilyRoom, a0:f3:c1:ff:14:70,  TP-Link, channel 11
  * [192.168.0.59](http://192.168.0.59) - QuietStudyRoom, c0:4a:00:40:e4:4d, TP-Link, channel 11
+ * [Mikrotik RouterBoard 2011UiAS-RM](http://routerboard.com/RB2011UiAS-RM) IP: 192.168.88.1 Netmask 255.255.255.0 (/24).
