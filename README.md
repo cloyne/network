@@ -84,12 +84,6 @@ DHCP client range         | 10.20.32.100 - 10.20.35.190 (859 addresses) |       
 clo-kng      Antenna      | [10.20.35.210](http://10.20.35.210)         | 24:A4:3C:9C:F6:AD | Cloyne E3      |
 clo-euc      Antenna      | [10.20.35.211](http://10.20.35.211)         | 04:18:D6:A4:84:77 | Cloyne W3      | Not currently used
 kng-clo      Antenna      | [10.20.35.212](http://10.20.35.212)         | 24:A4:3C:BE:4E:A0 | Kingman roof   | (temporary moved from 10.20.99.210 until Kingman gets its own router)
-Study Room AP             | [10.20.35.220](http://10.20.35.220)         | 80:2a:a8:13:4b:ed | Ubiquiti UniFi AP-AC-Pro| channel 11, 44
-Network Closet AP         | [10.20.35.221](http://10.20.35.221)         | 80:2a:a8:13:4a:19 | Ubiquiti UniFi AP-AC-Pro | channel 1, 149
-Dining Room AP            | [10.20.35.222](http://10.20.35.222)         | 80:2a:a8:13:4b:bb | Ubiquiti UniFi AP-AC-Pro | channel 1, 36
-2nd Floor North           | [10.20.35.223](http://10.20.35.223)         | 80:2a:a8:13:4b:c5 | Ubiquiti UniFi AP-AC-Pro | channel 6, 161
-clo-euc      Antenna      | [10.20.35.240](http://10.20.35.240)         | B8:27:EB:7A:6A:BB | KORUZA
-euc-clo      Antenna      | [10.20.35.241](http://10.20.35.241)         | B8:27:EB:23:21:E7 | KORUZA
 
 Other 10.20.* ranges are described in [bsc-networks/mesh](https://github.com/bsc-networks/mesh), so please don't assign anything to those.
 
