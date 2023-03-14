@@ -60,7 +60,7 @@ W2SB Switch               | [10.20.32.26](http://10.20.32.26)           | fc:75:
 Network Room Switch 1     | [10.20.32.27](http://10.20.32.27)           | fc:75:16:68:bb:99 | Network Room   |             |
 W3SB Switch               | [10.20.32.28](http://10.20.32.28)           | fc:75:16:68:b4:79 | W3SB           |             |
 Door Rasperry Pi Zero     | [10.20.32.29](http://10.20.32.29)           | b8:27:eB:3a:f1:28 | Front Door     | Raspberry Pi Zero |
-Unused                    | 10.20.32.30 - 10.20.32.39 (10 IPs)          |                   |                |             |
+Unused                    | 10.20.32.30 - 10.20.32.39 (9 IPs)           |                   |                |             |
 `LibEd` Access Point | [10.20.32.225](http://10.20.32.225)           | 68:d7:9a:c0:34:37 | LibEd Room     | Ubiquiti UniFi AP AC Pro  | channel 6, 48
 `w3j`        Access Point | [10.20.32.41](http://10.20.32.41)           | e8:94:f6:68:87:51 | W3J            | TP-LINK TL-WR1043ND v2 | channel 11
 `e2j`        Access Point | [10.20.32.42](http://10.20.32.42)           | 04:18:d6:20:58:df | E2J            | Ubiquiti UniFi AP Pro  | channel 6, 132
